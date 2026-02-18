@@ -1,7 +1,6 @@
 import pandas as pd
 
 def extract_unique_post_titles_from_excel(input_file="all_raw_comments.xlsx", output_file="unique_post_titles.xlsx"):
-    """Extract unique post titles from your 50k comments Excel file"""
     
     print(f"Loading {input_file}...")
     
