@@ -17,7 +17,7 @@ subreddits = [
 #avoid technology and futurology for now, since u accept any comment w "AI" in it
 
 keywords = [
-    "AI recruit"
+    "AI recruit",
     "AI recruiting",
     "AI hiring",
     "AI resume screening",
