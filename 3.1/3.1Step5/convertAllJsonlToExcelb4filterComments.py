@@ -12,11 +12,10 @@ subreddits = [
     "recruitmentagencies",
     #"technology",
     #"futurology",
-    #"recruitinghell"
+    "recruitinghell"
 ]
 
 def create_raw_excel():
-    """Create Excel with ALL 50k raw comments (before filtering)"""
     
     all_comments = []
     

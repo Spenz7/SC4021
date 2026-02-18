@@ -39,6 +39,7 @@ Note: rn u accept post titles w "AI" in it + any comment that has "AI" in it (ca
 either (maybe only accept post titles w "AI" in it)
 we r basically searching keywords in reddit's search bar and pick the top 100 relevant posts. Then we accept posts that contain "AI" in their title, or any comments that contain "AI" in it
 
+Tip: maybe filter to req both post title and comment to contain "AI" in it, but rn can only get 5k
 
 Mtd2 optional: extractPostTitles.py (reads an excel file and extracts all post titles once each st u end up w unique list of post titles no dup)
 -> generates excel file unique_post_titles
