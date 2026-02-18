@@ -9,10 +9,10 @@ subreddits = [
     "recruiting",
     "recruitment",
     "humanresources",
-    "recruitinghell",
-    "technology",
-    "futurology",
-    "recruitmentagencies"
+    "recruitmentagencies",
+    #"technology",
+    #"futurology",
+    #"recruitinghell"
 ]
 
 def create_raw_excel():

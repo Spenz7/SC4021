@@ -7,13 +7,16 @@ from collections import defaultdict
 
 # --- Configuration ---
 subreddits = [
+
     "recruiting",
     "recruitment",
     "humanresources",
-    "recruitinghell",
     "recruitmentagencies",
-    "futurology",
-    "technology"
+    #a lot of unrelated topics, if wan this do use fullCrawlManual.py# "technology",
+    #a lot of unrelated topics, if wan this do use fullCrawlManual.py#"futurology",
+    
+    
+    #last resort #"recruitinghell"
     
 ]
 #avoid technology and futurology for now, since u accept any comment w "AI" in it
@@ -31,7 +34,7 @@ keywords = [
     "candidate ranking AI",
 ]
 
-MIN_COMMENTS = 5  # Reduced from 25 to 5
+MIN_COMMENTS = 20
 OUTPUT_FOLDER = "jsonl_crawl_full"
 PROGRESS_FILE = "crawl_progress.json"
 os.makedirs(OUTPUT_FOLDER, exist_ok=True)
