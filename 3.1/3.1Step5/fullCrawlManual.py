@@ -29,7 +29,7 @@ keywords = [
     "candidate ranking AI",
 ]
 
-MIN_COMMENTS = 20
+MIN_COMMENTS = 30
 OUTPUT_FOLDER = "jsonl_crawl_full"
 PROGRESS_FILE = "crawl_progress.json"
 os.makedirs(OUTPUT_FOLDER, exist_ok=True)

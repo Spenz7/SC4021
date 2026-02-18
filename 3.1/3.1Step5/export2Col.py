@@ -2,7 +2,7 @@ import pandas as pd
 import json
 
 # Load your Excel file
-df = pd.read_excel("ai_filtered_three_sheets.xlsx", sheet_name="All_Unique_Comments")
+df = pd.read_excel("ai_filtered_three_sheets.xlsx", sheet_name="All_Unique_Comments(1)")
 
 # Select only the two columns you want
 # Adjust the column names if your Excel file uses different headers

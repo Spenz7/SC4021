@@ -1,7 +1,7 @@
 import pandas as pd
 
 # Load Sheet 3
-df = pd.read_excel("ai_filtered_three_sheets.xlsx", sheet_name="All_Unique_Comments")
+df = pd.read_excel("ai_filtered_three_sheets.xlsx", sheet_name="All_Unique_Comments(1)")
 
 # Random sample 1000 records
 sample_df = df.sample(n=2000, random_state=42)
