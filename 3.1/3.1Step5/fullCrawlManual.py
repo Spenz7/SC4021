@@ -6,6 +6,10 @@ from datetime import datetime
 
 # --- Configuration ---
 subreddits = [
+    "recruiting",
+    "recruitment",
+    "humanresources",
+    "recruitmentagencies",
     "technology",
     "futurology",
 ]
