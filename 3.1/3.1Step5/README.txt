@@ -29,7 +29,10 @@ Steps 1-4:
 
 OR
 Mtd2 V2 (what I did)
-Step3: Filter all post titles with AI in it and store its comments in an excel sheet
+Step3: 
+Filter all post titles with keywords (eg AI) in it and store its comments in an excel sheet2
+FIlter all comments w keywords (eg AI) in it and store in excel sheet1
+Merge sheet1 and 2 and remove dup
 Then skip straight to Step 6
 
 Steps 1-3:
@@ -40,6 +43,11 @@ either (maybe only accept post titles w "AI" in it)
 we r basically searching keywords in reddit's search bar and pick the top 100 relevant posts. Then we accept posts that contain "AI" in their title, or any comments that contain "AI" in it
 
 Tip: maybe filter to req both post title and comment to contain "AI" in it, but rn can only get 5k
+Tip2: If need more relevant comments, take from r/technology, r/futurology, but use manual crawl where
+then later only need filter comments that match keywords.
+Tip2: Why don't use manual crawl for the recruitment related subreddits? Cuz uw save time so u r 
+assuming that any posts there that fulfil ur search query r okay, then later u do another round of 
+filtering in Mtd2 V2 Step3
 
 Mtd2 optional: extractPostTitles.py (reads an excel file and extracts all post titles once each st u end up w unique list of post titles no dup)
 -> generates excel file unique_post_titles
