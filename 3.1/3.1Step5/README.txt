@@ -49,5 +49,7 @@ Tip2: Why don't use manual crawl for the recruitment related subreddits? Cuz uw 
 assuming that any posts there that fulfil ur search query r okay, then later u do another round of 
 filtering in Mtd2 V2 Step3
 
+Tip3: Filter by opinionated keywords like "Love, like, bad, mid, etc"
+
 Mtd2 optional: extractPostTitles.py (reads an excel file and extracts all post titles once each st u end up w unique list of post titles no dup)
 -> generates excel file unique_post_titles

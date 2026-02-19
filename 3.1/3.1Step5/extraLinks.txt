@@ -1,0 +1,16 @@
+mid:
+https://www.reddit.com/r/TheCivilService/comments/1lmirql/use_of_ai_in_recruitment/
+
++ve:
+https://www.reddit.com/r/SaaS/comments/1l1otcf/we_tested_an_ai_hiring_tool_to_screen_candidates/
+https://www.reddit.com/r/Recruiter_Advice/comments/1ikfrx5/how_ai_can_be_used_for_recruitment_work/
+https://www.reddit.com/r/Recruiter_Advice/comments/1oi7q6e/what_ai_platforms_should_i_become_familiar_with/
+https://www.reddit.com/r/human_resources/comments/1o5dmqe/how_do_you_use_ai_in_hr_im_interested_in_real/
+https://www.reddit.com/r/human_resources/comments/1lzi04u/does_anyone_use_ai_tools_for_hr_assistance/
+https://www.reddit.com/r/sysadmin/comments/1qxwl2a/who_elses_recruiting_staff_has_been_decimated_by/
+
+-ve:
+https://www.reddit.com/r/Futurology/comments/12zdnto/most_people_dont_want_a_company_ai_to_do_the/
+https://www.reddit.com/r/Futurology/comments/1oykog0/nearly_a_third_of_companies_plan_to_replace_hr/
+https://www.reddit.com/r/Futurology/comments/1mgs91o/ai_is_doing_job_interviews_nowbut_candidates_say/
+https://www.reddit.com/r/ModernHiring/comments/1r7hq21/should_ai_be_the_main_interviewer_in_hiring/
