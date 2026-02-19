@@ -33,6 +33,7 @@ keywords = [
     "interview bot",
     "candidate ranking AI",
     "[MONTHLY MEGATHREAD] AI &amp; Automation in Recruitment: Tools, Trends, and Ethics" 
+    #REV maybe only use the last one for r/recruitment to increase +ve comments
     #REV only use the last one for r/recruitment, maybe for r/recruiting if u remove the txt in [ ]
 ]
 
