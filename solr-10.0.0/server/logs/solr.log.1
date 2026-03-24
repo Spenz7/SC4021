@@ -1,0 +1,69 @@
+2026-03-24 08:00:15.676 INFO  (main) [] o.e.j.s.Server jetty-12.0.27; built: 2025-09-10T23:47:49.595Z; git: 3569a3e83ad136ee44e26b370b74c1c5e9f33e61; jvm 21.0.10+8-LTS-217
+2026-03-24 08:00:16.998 INFO  (main) [] o.e.j.e.w.StandardDescriptorProcessor NO JSP Support for /solr, did not find org.apache.jasper.servlet.JspServlet
+2026-03-24 08:00:17.032 INFO  (main) [] o.e.j.s.h.ContextHandler Started oeje10w.WebAppContext@1e411d81{solr-jetty-context,/solr,b=file:///C:/Users/zhixu/solr-10.0.0/server/solr-webapp/webapp/,a=AVAILABLE,h=oeje10s.SessionHandler@53b98ff6{STARTED}}{C:\Users\zhixu\solr-10.0.0\server/solr-webapp/webapp}
+2026-03-24 08:00:17.047 WARN  (main) [] o.a.s.c.u.EnvUtils You are passing in deprecated system property zk.client.timeout and should upgrade to using solr.zookeeper.client.timeout instead.  The deprecated property support will be removed in future version of Solr.
+2026-03-24 08:00:17.047 INFO  (main) [] o.a.s.s.CoreContainerProvider Using logger factory org.apache.logging.slf4j.Log4jLoggerFactory
+2026-03-24 08:00:17.048 INFO  (main) [] o.a.s.s.CoreContainerProvider  ___      _       Welcome to Apache Solr™ version 10.0.0
+2026-03-24 08:00:17.048 INFO  (main) [] o.a.s.s.CoreContainerProvider / __| ___| |_ _   Starting in cloud mode on port 8983
+2026-03-24 08:00:17.048 INFO  (main) [] o.a.s.s.CoreContainerProvider \__ \/ _ \ | '_|  Install dir: C:\Users\zhixu\solr-10.0.0
+2026-03-24 08:00:17.048 INFO  (main) [] o.a.s.s.CoreContainerProvider |___/\___/_|_|    Start time: 2026-03-24T08:00:17.048662900Z
+2026-03-24 08:00:17.048 INFO  (main) [] o.a.s.s.CoreContainerProvider Solr started with "-XX:+CrashOnOutOfMemoryError" that will crash on any OutOfMemoryError exception. The cause of the OOME will be logged in the crash file at the following path: C:\Users\zhixu\solr-10.0.0\server\logs\jvm_crash_18400.log
+2026-03-24 08:00:17.147 INFO  (main) [] o.a.l.i.v.PanamaVectorizationProvider Java vector incubator API enabled; uses preferredBitSize=512; FMA enabled
+2026-03-24 08:00:17.147 INFO  (main) [] o.a.s.s.CoreContainerProvider Solr Home: C:\Users\zhixu\solr-10.0.0\server\solr (source: system property: solr.solr.home)
+2026-03-24 08:00:17.169 INFO  (main) [] o.a.s.c.SolrXmlConfig Loading solr.xml from C:\Users\zhixu\solr-10.0.0\server\solr\solr.xml
+2026-03-24 08:00:17.211 INFO  (main) [] o.a.s.c.SolrResourceLoader Added 1 libs to classloader, from paths: [/C:/Users/zhixu/solr-10.0.0/lib]
+2026-03-24 08:00:17.790 INFO  (main) [] o.a.s.c.OpenTelemetryConfigurator OpenTelemetry tracer enabled with simple propagation only.
+2026-03-24 08:00:18.229 INFO  (main) [] o.a.s.m.OtelRuntimeJvmMetrics JVM metrics collection successfully initialized
+2026-03-24 08:00:19.199 INFO  (main) [] o.a.s.u.StartupLoggingUtils Jetty request logging enabled. Will retain logs for last 3 days.
+2026-03-24 08:00:19.206 INFO  (main) [] o.a.s.c.SolrZkServerProps Reading configuration from: C:\Users\zhixu\solr-10.0.0\server\solr\zoo.cfg
+2026-03-24 08:00:19.212 INFO  (main) [] o.a.s.c.SolrZkServer STARTING EMBEDDED ENSEMBLE ZOOKEEPER SERVER at port 9983, listening on host 127.0.0.1
+2026-03-24 08:00:19.283 WARN  (embeddedZkServer) [] o.a.z.s.ServerCnxnFactory maxCnxns is not configured, using default value 0.
+2026-03-24 08:00:19.727 INFO  (main) [] o.a.s.c.ZkContainer Zookeeper client=127.0.0.1:9983
+2026-03-24 08:00:19.866 INFO  (main) [] o.a.c.f.i.CuratorFrameworkImpl Starting
+2026-03-24 08:00:19.932 INFO  (main) [] o.a.c.f.i.CuratorFrameworkImpl Default schema
+2026-03-24 08:00:19.956 INFO  (main-EventThread) [] o.a.c.f.s.ConnectionStateManager State change: CONNECTED
+2026-03-24 08:00:19.973 INFO  (main-EventThread) [] o.a.c.f.i.EnsembleTracker New config event received: {}
+2026-03-24 08:00:19.973 INFO  (main-EventThread) [] o.a.c.f.i.EnsembleTracker New config event received: {}
+2026-03-24 08:00:20.139 WARN  (main) [] o.a.s.c.ZkController Contents of zookeeper /security.json are world-readable; consider setting up ACLs as described in https://solr.apache.org/guide/solr/latest/deployment-guide/zookeeper-access-control.html
+2026-03-24 08:00:20.179 INFO  (main) [] o.a.s.c.ZkController The Overseer is enabled.  It will process all cluster commands & state updates.
+2026-03-24 08:00:20.216 INFO  (main) [] o.a.s.c.OverseerElectionContext I am going to be the leader localhost:8983_solr
+2026-03-24 08:00:20.226 INFO  (main) [] o.a.s.c.Overseer Overseer (id=72129174343581696-localhost:8983_solr-n_0000000000) starting
+2026-03-24 08:00:20.352 INFO  (main) [] o.a.s.c.ZkController Register node as live in ZooKeeper: /live_nodes/localhost:8983_solr
+2026-03-24 08:00:20.370 INFO  (OverseerStateUpdate-72129174343581696-localhost:8983_solr-n_0000000000) [] o.a.s.c.Overseer Starting to work on the main queue : localhost:8983_solr
+2026-03-24 08:00:20.389 INFO  (OverseerStateUpdate-72129174343581696-localhost:8983_solr-n_0000000000) [] o.a.s.c.c.ZkStateReader Updated live nodes from ZooKeeper... (0) -> (1)
+2026-03-24 08:00:20.483 WARN  (main) [] o.a.s.c.CoreContainer Not all security plugins configured!  authentication=disabled authorization=disabled.  Solr is only as secure as you make it. Consider configuring authentication/authorization before exposing Solr to users internal or external.  See https://s.apache.org/solrsecurity for more info
+2026-03-24 08:00:21.083 INFO  (main) [] o.a.s.c.CorePropertiesLocator Found 0 core definitions underneath C:\Users\zhixu\solr-10.0.0\server\solr
+2026-03-24 08:00:21.355 WARN  (main) [] o.g.j.m.i.MessagingBinders A class jakarta.activation.DataSource for a default provider MessageBodyWriter<jakarta.activation.DataSource> was not found. The provider is not available.
+2026-03-24 08:00:21.891 INFO  (main) [] o.a.s.j.SolrRequestAuthorizer Creating a new SolrRequestAuthorizer
+2026-03-24 08:00:22.185 INFO  (main) [] o.e.j.e.s.ServletContextHandler Started oeje10w.WebAppContext@1e411d81{solr-jetty-context,/solr,b=file:///C:/Users/zhixu/solr-10.0.0/server/solr-webapp/webapp/,a=AVAILABLE,h=oeje10s.SessionHandler@53b98ff6{STARTED}}{C:\Users\zhixu\solr-10.0.0\server/solr-webapp/webapp}
+2026-03-24 08:00:22.195 INFO  (main) [] o.e.j.s.RequestLogWriter Opened C:\Users\zhixu\solr-10.0.0\server\logs\2026_03_24.request.log
+2026-03-24 08:00:22.242 INFO  (main) [] o.e.j.s.AbstractConnector Started ServerConnector@3d881579{HTTP/1.1, (http/1.1, h2c)}{127.0.0.1:8983}
+2026-03-24 08:00:22.242 INFO  (main) [] o.e.j.s.Server Started oejs.Server@73db4768{STARTING}[12.0.27,sto=0] @13086ms
+2026-03-24 08:00:22.758 INFO  (qtp1537772520-41-null-1) [ t:null-1] o.a.s.s.HttpSolrCall [admin] path=/admin/info/system params={wt=javabin} status=0 QTime=219
+2026-03-24 08:00:22.849 INFO  (qtp1537772520-39-null-2) [ t:null-2] o.a.s.s.HttpSolrCall [admin] path=/admin/collections params={action=CLUSTERSTATUS&wt=javabin} status=0 QTime=23
+2026-03-24 08:07:51.609 INFO  (ShutdownMonitor) [] o.e.j.s.Server Stopped oejs.Server@73db4768{STOPPING}[12.0.27,sto=0]
+2026-03-24 08:07:51.613 INFO  (ShutdownMonitor) [] o.e.j.s.AbstractConnector Stopped ServerConnector@3d881579{HTTP/1.1, (http/1.1, h2c)}{127.0.0.1:8983}
+2026-03-24 08:07:51.618 INFO  (ShutdownMonitor) [] o.a.s.c.CoreContainer Shutting down CoreContainer instance=1933762653
+2026-03-24 08:07:51.620 INFO  (ShutdownMonitor) [] o.a.s.c.ZkController Remove node as live in ZooKeeper:/live_nodes/localhost:8983_solr
+2026-03-24 08:07:51.633 INFO  (zkCallback-12-thread-2) [] o.a.s.c.c.ZkStateReader Updated live nodes from ZooKeeper... (1) -> (0)
+2026-03-24 08:07:51.637 INFO  (ShutdownMonitor) [] o.a.s.c.ZkController Publish this node as DOWN...
+2026-03-24 08:07:51.637 INFO  (ShutdownMonitor) [] o.a.s.c.ZkController Publish node=localhost:8983_solr as DOWN
+2026-03-24 08:07:51.647 WARN  (ShutdownMonitor) [] i.o.s.m.SdkObservableInstrument CallbackRegistration{instrumentDescriptors=[InstrumentDescriptor{name=solr_node_executor_thread_pool_size, description=Thread pool size, unit=, type=OBSERVABLE_GAUGE, valueType=LONG, advice=Advice{explicitBucketBoundaries=null, attributes=null}}]} has called close() multiple times.
+2026-03-24 08:07:51.648 WARN  (ShutdownMonitor) [] i.o.s.m.SdkObservableInstrument CallbackRegistration{instrumentDescriptors=[InstrumentDescriptor{name=solr_node_executor_thread_pool_tasks, description=Thread pool task counts, unit=, type=OBSERVABLE_GAUGE, valueType=LONG, advice=Advice{explicitBucketBoundaries=null, attributes=null}}]} has called close() multiple times.
+2026-03-24 08:07:51.661 WARN  (closeThreadPool-22-thread-1) [] i.o.s.m.SdkObservableInstrument CallbackRegistration{instrumentDescriptors=[InstrumentDescriptor{name=solr_core_executor_thread_pool_size, description=Thread pool size, unit=, type=OBSERVABLE_GAUGE, valueType=LONG, advice=Advice{explicitBucketBoundaries=null, attributes=null}}]} has called close() multiple times.
+2026-03-24 08:07:51.661 WARN  (closeThreadPool-22-thread-2) [] i.o.s.m.SdkObservableInstrument CallbackRegistration{instrumentDescriptors=[InstrumentDescriptor{name=solr_core_executor_thread_pool_size, description=Thread pool size, unit=, type=OBSERVABLE_GAUGE, valueType=LONG, advice=Advice{explicitBucketBoundaries=null, attributes=null}}]} has called close() multiple times.
+2026-03-24 08:07:51.663 WARN  (closeThreadPool-22-thread-2) [] i.o.s.m.SdkObservableInstrument CallbackRegistration{instrumentDescriptors=[InstrumentDescriptor{name=solr_core_executor_thread_pool_tasks, description=Thread pool task counts, unit=, type=OBSERVABLE_GAUGE, valueType=LONG, advice=Advice{explicitBucketBoundaries=null, attributes=null}}]} has called close() multiple times.
+2026-03-24 08:07:51.663 WARN  (closeThreadPool-22-thread-1) [] i.o.s.m.SdkObservableInstrument CallbackRegistration{instrumentDescriptors=[InstrumentDescriptor{name=solr_core_executor_thread_pool_tasks, description=Thread pool task counts, unit=, type=OBSERVABLE_GAUGE, valueType=LONG, advice=Advice{explicitBucketBoundaries=null, attributes=null}}]} has called close() multiple times.
+2026-03-24 08:07:51.663 WARN  (closeThreadPool-22-thread-2) [] i.o.s.m.SdkObservableInstrument CallbackRegistration{instrumentDescriptors=[InstrumentDescriptor{name=solr_core_executor_thread_pool_size, description=Thread pool size, unit=, type=OBSERVABLE_GAUGE, valueType=LONG, advice=Advice{explicitBucketBoundaries=null, attributes=null}}]} has called close() multiple times.
+2026-03-24 08:07:51.663 WARN  (closeThreadPool-22-thread-2) [] i.o.s.m.SdkObservableInstrument CallbackRegistration{instrumentDescriptors=[InstrumentDescriptor{name=solr_core_executor_thread_pool_tasks, description=Thread pool task counts, unit=, type=OBSERVABLE_GAUGE, valueType=LONG, advice=Advice{explicitBucketBoundaries=null, attributes=null}}]} has called close() multiple times.
+2026-03-24 08:07:51.664 INFO  (closeThreadPool-24-thread-1) [] o.a.s.c.Overseer Overseer (id=72129174343581696-localhost:8983_solr-n_0000000000) closing
+2026-03-24 08:07:51.665 WARN  (OverseerCollectionConfigSetProcessor-72129174343581696-localhost:8983_solr-n_0000000000) [] i.o.s.m.SdkObservableInstrument CallbackRegistration{instrumentDescriptors=[InstrumentDescriptor{name=solr_overseer_collection_work_queue_size, description=Size of overseer's collection work queue, unit=, type=OBSERVABLE_GAUGE, valueType=LONG, advice=Advice{explicitBucketBoundaries=null, attributes=null}}]} has called close() multiple times.
+2026-03-24 08:07:51.665 INFO  (OverseerStateUpdate-72129174343581696-localhost:8983_solr-n_0000000000) [] o.a.s.c.Overseer Overseer Loop exiting : localhost:8983_solr
+2026-03-24 08:07:51.666 INFO  (closeThreadPool-24-thread-2) [] o.a.s.c.Overseer Overseer (id=72129174343581696-localhost:8983_solr-n_0000000000) closing
+2026-03-24 08:07:51.668 INFO  (Curator-Framework-0) [] o.a.c.f.i.CuratorFrameworkImpl backgroundOperationsLoop exiting
+2026-03-24 08:07:51.778 INFO  (ShutdownMonitor) [] o.a.s.c.Overseer Overseer (id=72129174343581696-localhost:8983_solr-n_0000000000) closing
+2026-03-24 08:07:51.779 WARN  (embeddedZkServer) [] o.a.z.s.ZooKeeperServerMain Server interrupted =>java.lang.InterruptedException
+	at java.base/java.util.concurrent.locks.AbstractQueuedSynchronizer.acquireSharedInterruptibly(AbstractQueuedSynchronizer.java:1100)
+
+2026-03-24 08:07:51.780 INFO  (embeddedZkServer) [] o.a.s.c.SolrZkServer ZooKeeper Server exited.
+2026-03-24 08:07:51.788 INFO  (ShutdownMonitor) [] o.e.j.e.s.ServletContextHandler Stopped oeje10w.WebAppContext@1e411d81{solr-jetty-context,/solr,b=null,a=AVAILABLE,h=oeje10s.SessionHandler@53b98ff6{STOPPED}}{C:\Users\zhixu\solr-10.0.0\server/solr-webapp/webapp}
