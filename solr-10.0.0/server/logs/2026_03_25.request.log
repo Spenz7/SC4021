@@ -1401,3 +1401,10 @@
 127.0.0.1 - - [25/Mar/2026:08:40:19 +0000] "GET /solr/admin/info/system?_=1774412346406&wt=json HTTP/1.1" 200 1531
 127.0.0.1 - - [25/Mar/2026:08:40:19 +0000] "GET /solr/admin/collections?_=1774412346406&action=LIST&wt=json HTTP/1.1" 200 145
 127.0.0.1 - - [25/Mar/2026:08:40:19 +0000] "GET /solr/admin/collections?_=1774412346406&action=LISTALIASES&wt=json HTTP/1.1" 200 95
+127.0.0.1 - - [25/Mar/2026:08:47:59 +0000] "GET /solr/admin/cores?_=1774412346406&indexInfo=false&wt=json HTTP/1.1" 200 1815
+127.0.0.1 - - [25/Mar/2026:08:47:59 +0000] "GET /solr/climate_change_core/config?_=1774413069032&wt=json HTTP/1.1" 200 2315
+127.0.0.1 - - [25/Mar/2026:08:47:59 +0000] "GET /solr/climate_change_core/admin/luke?_=1774413069032&show=schema&wt=json HTTP/1.1" 200 6338
+127.0.0.1 - - [25/Mar/2026:08:47:59 +0000] "GET /solr/climate_change_core/admin/luke?_=1774413069032&numTerms=0&wt=json HTTP/1.1" 200 913
+127.0.0.1 - - [25/Mar/2026:08:47:59 +0000] "GET /solr/admin/info/system?_=1774412346406&wt=json HTTP/1.1" 200 1528
+127.0.0.1 - - [25/Mar/2026:08:47:59 +0000] "GET /solr/admin/collections?_=1774412346406&action=LIST&wt=json HTTP/1.1" 200 145
+127.0.0.1 - - [25/Mar/2026:08:47:59 +0000] "GET /solr/admin/collections?_=1774412346406&action=LISTALIASES&wt=json HTTP/1.1" 200 95

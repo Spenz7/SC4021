@@ -4,7 +4,7 @@ Group 39
 
 ## Indexing with Apache Solr
 
-This section describes how we set up Apache Solr and indexed the climate change dataset for this assignment.
+This section describes how to maintain the existing Solr setup for this assignment. The core (`climate_change_core`) and initial schema are already created; use this guide when you need to edit the schema and reindex the data.
 
 ### 1. Prerequisites
 
@@ -44,31 +44,42 @@ Open a browser and go to:
 
 Select the `climate_change_core` core from the top-left dropdown.
 
-### 4. Define the Schema (Schema Designer)
+### 4. Edit the Schema (Schema Designer)
 
-We use the **Schema Designer** tab in the Solr Admin UI to configure the schema for `climate_change_core`.
+We use the **Schema Designer** tab in the Solr Admin UI to maintain the schema for `climate_change_core` (e.g., adding new fields, changing field types).
 
-Overall workflow in Schema Designer:
+Typical maintenance workflow in Schema Designer:
 
-1. **Add field types** – define appropriate types (e.g., string, text with analyzers, numeric types) for the dataset.
-2. **Add fields** – create fields that match the columns in `cleaned_data.csv` and assign them to the previously defined field types.
-3. **Publish schema** – after editing, click **Publish** to apply the schema changes to the core.
+1. **Review existing field types** – check that current types (string, text with analyzers, numeric types, etc.) still fit the updated data.
+2. **Update or add fields** – modify existing fields or create new fields that match any changes to the columns in `cleaned_data.csv`, assigning appropriate field types.
+3. **Publish schema** – after making changes, click **Publish** to apply the updated schema to the core.
 
-The schema must be published before indexing data so that Solr can interpret all fields correctly.
+Always publish the schema before reindexing data so that Solr interprets all fields correctly.
 
 Official guide: https://solr.apache.org/guide/solr/latest/indexing-guide/schema-designer.html
 
-### 5. Upload (Index) the Data
+### 5. Reindex the Data After Schema Changes
 
-Ensure `cleaned_data.csv` is accessible from the Solr `bin` directory (either by running the command from the directory containing the file or by providing the full path).
+Whenever the schema is changed (e.g., fields added/removed or types updated), you should reindex the data so all documents conform to the new schema.
 
-Example (from within `solr-10.0.0`):
+Recommended steps:
+
+1. **Delete existing documents** from `climate_change_core` (see Section 6 below).
+2. **Post the updated CSV** to Solr.
+
+From within the `solr-10.0.0` folder, assuming `cleaned_data.csv` is in the `indexing` folder at the project root, run:
 
 ```bash
-bin\solr.cmd post -c climate_change_core path\to\cleaned_data.csv
+bin\solr.cmd post -c climate_change_core ..\indexing\cleaned_data.csv
 ```
 
-After posting, documents from `cleaned_data.csv` will be indexed into `climate_change_core` and can be queried via the Solr UI or Solr APIs.
+On macOS / Linux:
+
+```bash
+bin/solr post -c climate_change_core ../indexing/cleaned_data.csv
+```
+
+After posting, documents from `cleaned_data.csv` will be reindexed into `climate_change_core` and can be queried via the Solr UI or Solr APIs.
 
 ### 6. Deleting All Documents from the Core
 

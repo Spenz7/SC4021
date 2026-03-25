@@ -7640,3 +7640,10 @@
 2026-03-25 08:40:19.895 INFO  (qtp1542520418-187-null-1304) [ t:null-1304] o.a.s.s.HttpSolrCall [admin] path=/admin/info/system params={wt=json&_=1774412346406} status=0 QTime=71
 2026-03-25 08:40:19.910 INFO  (qtp1542520418-123-null-1307) [ t:null-1307] o.a.s.s.HttpSolrCall [admin] path=/admin/collections params={action=LIST&wt=json&_=1774412346406} status=0 QTime=0
 2026-03-25 08:40:19.921 INFO  (qtp1542520418-187-null-1308) [ t:null-1308] o.a.s.s.HttpSolrCall [admin] path=/admin/collections params={action=LISTALIASES&wt=json&_=1774412346406} status=0 QTime=2
+2026-03-25 08:47:59.616 INFO  (qtp1542520418-137-null-1312) [c:climate_change_core s:shard1 r:core_node2 x:climate_change_core_shard1_replica_n1 t:null-1312] o.a.s.c.S.Request path=/config params={wt=json&_=1774413069032} status=0 QTime=0
+2026-03-25 08:47:59.616 INFO  (qtp1542520418-123-null-1310) [ t:null-1310] o.a.s.s.HttpSolrCall [admin] path=/admin/cores params={indexInfo=false&wt=json&_=1774412346406} status=0 QTime=0
+2026-03-25 08:47:59.618 INFO  (qtp1542520418-439-null-1311) [c:climate_change_core s:shard1 r:core_node2 x:climate_change_core_shard1_replica_n1 t:null-1311] o.a.s.c.S.Request path=/admin/luke params={show=schema&wt=json&_=1774413069032} status=0 QTime=2
+2026-03-25 08:47:59.629 INFO  (qtp1542520418-119-null-1313) [c:climate_change_core s:shard1 r:core_node2 x:climate_change_core_shard1_replica_n1 t:null-1313] o.a.s.c.S.Request path=/admin/luke params={numTerms=0&wt=json&_=1774413069032} status=0 QTime=1
+2026-03-25 08:47:59.662 INFO  (qtp1542520418-141-null-1309) [ t:null-1309] o.a.s.s.HttpSolrCall [admin] path=/admin/info/system params={wt=json&_=1774412346406} status=0 QTime=46
+2026-03-25 08:47:59.667 INFO  (qtp1542520418-187-null-1314) [ t:null-1314] o.a.s.s.HttpSolrCall [admin] path=/admin/collections params={action=LIST&wt=json&_=1774412346406} status=0 QTime=0
+2026-03-25 08:47:59.673 INFO  (qtp1542520418-123-null-1315) [ t:null-1315] o.a.s.s.HttpSolrCall [admin] path=/admin/collections params={action=LISTALIASES&wt=json&_=1774412346406} status=0 QTime=0
