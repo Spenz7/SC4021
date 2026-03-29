@@ -1,0 +1,7 @@
+# For main.ipynb (HF sentiment + Excel export)
+transformers>=4.36
+torch
+pandas>=2.0
+openpyxl
+textblob
+nltk
