@@ -1,2 +1,4 @@
 pandas>=3.0.1
 pysolr>=3.11.0
+Flask
+requests
