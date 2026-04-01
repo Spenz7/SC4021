@@ -23,17 +23,17 @@ Group 39
 	```
 
 	Run the appropriate start command:
-	
-	On Windows:
-	```bash
-	bin\solr.cmd start
-	```
-	On macOS / Linux:
-	```bash
-	bin/solr start
-	```
 
-Solr runs on http://localhost:8983/solr and the core used is `climate_change_core`.
+	- On Windows:
+		```bash
+		bin\solr.cmd start
+		```
+	- On macOS / Linux:
+		```bash
+		bin/solr start
+		```
+
+	Solr runs on http://localhost:8983/solr and the core used is `climate_change_core`.
 
 4. **Run the search UI** (in a new terminal from project root):
 
@@ -54,6 +54,7 @@ Solr runs on http://localhost:8983/solr and the core used is `climate_change_cor
 	```json
 	{"delete": {"query": "*:*"}}
 	```
+
 - **Reindex Dataset**: Whenever the schema is changed (e.g., fields added/removed or types updated), you should delete existing data and reindex the data so all documents conform to the new schema.
 
 	On Windows:
