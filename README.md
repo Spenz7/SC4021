@@ -16,12 +16,20 @@ Group 39
 	```
 
 3. **Start Solr and the core**
-
+	
+	Open a terminal and navigate to the Solr folder:
 	```bash
 	cd solr-10.0.0
-	# Windows
+	```
+
+	Run the appropriate start command:
+	
+	On Windows:
+	```bash
 	bin\solr.cmd start
-	# macOS / Linux
+	```
+	On macOS / Linux:
+	```bash
 	bin/solr start
 	```
 
@@ -39,7 +47,7 @@ Solr runs on http://localhost:8983/solr and the core used is `climate_change_cor
 
 ## Solr Maintenance
 
-- **Access Admin UI**: http://localhost:8983/solr → select `climate_change_core`.
+- **Access Admin UI**: http://localhost:8983/solr → Select `climate_change_core`.
 - **Edit Schema**: Use the *Schema Designer* tab to maintain the schema, then click *Publish* when done editing.
 - **Delete All Documents**: In *Documents* tab, set **Document Type** to **Solr Command (raw XML or JSON)** and submit:
 
@@ -48,16 +56,22 @@ Solr runs on http://localhost:8983/solr and the core used is `climate_change_cor
 	```
 - **Reindex Dataset**: Whenever the schema is changed (e.g., fields added/removed or types updated), you should delete existing data and reindex the data so all documents conform to the new schema.
 
+	On Windows:
 	```bash
 	bin\solr.cmd post -c climate_change_core ..\indexing\cleaned_data.csv
-	# macOS / Linux
+	```
+	On macOS / Linux:
+	```bash
 	bin/solr post -c climate_change_core ../indexing/cleaned_data.csv
 	```
 
 - **Stop Solr** (from `solr-10.0.0`):
 
+	On Windows:
 	```bash
 	bin\solr.cmd stop -p 8983
-	# macOS / Linux
+	```
+	On macOS / Linux:
+	```bash
 	bin/solr stop -p 8983
 	```
