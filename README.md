@@ -37,22 +37,21 @@ Solr runs on http://localhost:8983/solr and the core used is `climate_change_cor
 5. **Use the UI**  
    Open http://localhost:5000 in your browser.
 
-## Solr Maintenance (Brief)
+## Solr Maintenance
 
 - **Access Admin UI**: http://localhost:8983/solr → select `climate_change_core`.
-- **Edit schema**: use the *Schema Designer* tab, then click *Publish*.
-- **Reindex dataset** (after schema changes, from `solr-10.0.0`, assuming `indexing/cleaned_data.csv` exists):
+- **Edit Schema**: Use the *Schema Designer* tab to maintain the schema, then click *Publish* when done editing.
+- **Delete All Documents**: In *Documents* tab, set **Document Type** to **Solr Command (raw XML or JSON)** and submit:
+
+	```json
+	{"delete": {"query": "*:*"}}
+	```
+- **Reindex Dataset**: Whenever the schema is changed (e.g., fields added/removed or types updated), you should delete existing data and reindex the data so all documents conform to the new schema.
 
 	```bash
 	bin\solr.cmd post -c climate_change_core ..\indexing\cleaned_data.csv
 	# macOS / Linux
 	bin/solr post -c climate_change_core ../indexing/cleaned_data.csv
-	```
-
-- **Delete all documents** (keep core): in *Documents* tab, choose *Solr Command* and submit:
-
-	```json
-	{"delete": {"query": "*:*"}}
 	```
 
 - **Stop Solr** (from `solr-10.0.0`):
@@ -62,4 +61,3 @@ Solr runs on http://localhost:8983/solr and the core used is `climate_change_cor
 	# macOS / Linux
 	bin/solr stop -p 8983
 	```
-
