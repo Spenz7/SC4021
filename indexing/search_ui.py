@@ -31,6 +31,92 @@ HTML = '''
             width: 400px;
             font-size: 16px;
         }
+        .sort-controls {
+            display: inline-block;
+            margin-left: 10px;
+        }
+        .sort-label {
+            margin-right: 4px;
+            font-size: 14px;
+            color: #555;
+        }
+        .sort-button { 
+            padding: 10px 15px;
+            font-size: 14px; 
+            background-color: #E1E3E3;
+            color: #2c3e50;
+            border: 1px solid #bdc3c7;
+            border-radius: 4px;
+            cursor: pointer;
+            margin-right: 4px;
+        }
+        .sort-button.active {
+            background-color: #3498db;
+            color: #fff;
+            border-color: #2980b9;
+        }
+        .sort-button:hover {
+            background-color: #E1E3E3;
+            color: #2c3e50;
+            border-color: #bdc3c7;
+        }
+        .sort-dropdown {
+            position: relative;
+            display: inline-block;
+        }
+        .sort-caret {
+            width: 8px;
+            height: 8px;
+            border-right: 1.5px solid #888;
+            border-bottom: 1.5px solid #888;
+            transform: rotate(45deg);
+            transition: transform 0.2s ease, border-color 0.2s ease;
+            vertical-align: middle;
+            position: relative;
+            display: inline-flex;
+            justify-content: space-between;
+            margin-left: 6px;
+            margin-bottom: 4px;
+        }
+        .sort-button.active .sort-caret {
+            transform: rotate(-135deg);
+            margin-top: 4px;
+        }
+        .sort-menu {
+            position: absolute;
+            top: 110%;
+            left: 0;
+            background: #fff;
+            border: 1px solid #bdc3c7;
+            border-radius: 4px;
+            box-shadow: 0 2px 6px rgba(0,0,0,0.15);
+            padding: 8px;
+            z-index: 10;
+            min-width: 140px;
+        }
+        .sort-menu.hidden {
+            display: none;
+        }
+        .sort-menu-title {
+            font-size: 12px;
+            text-transform: uppercase;
+            color: #888;
+            margin-bottom: 4px;
+        }
+        .sort-option {
+            display: block;
+            width: 100%;
+            text-align: left;
+            background: transparent;
+            border: none;
+            padding: 4px 2px;
+            cursor: pointer;
+            font-size: 14px;
+            color: #000;
+        }
+        .sort-option.active {
+            font-weight: bold;
+        }
         button {
             padding: 10px 15px;
             font-size: 16px;
@@ -60,7 +146,7 @@ HTML = '''
         }
         .subreddit-badge {
             display: inline-block;
-            background-color: #ffeb3b; /* yellow */
+            background-color: #FCDFC2;
             color: #000;
             font-size: 12px;
             padding: 2px 6px;
@@ -77,15 +163,15 @@ HTML = '''
         .link-button {
             padding: 5px 10px;
             font-size: 14px;
-            background-color: #3498db;
-            color: white;
-            border: none;
+            background-color: transparent;
+            color: #555;
+            border: 1px solid #bdc3c7;
             border-radius: 20px;
             cursor: pointer;
             transition: background-color 0.2s;
         }
         .link-button:hover {
-            background-color: #2980b9;
+            background-color: #ecf0f1;
         }
         .pagination {
             margin-top: 20px;
@@ -103,7 +189,33 @@ HTML = '''
 
 <form method="get" class="search-box">
     <input type="text" name="q" value="{{ query }}" placeholder="Search climate topics..." required>
+    <input type="hidden" id="sort-field-input" name="sort_field" value="{{ sort_field }}">
     <button type="submit">Search</button>
+    <div class="sort-controls">
+        <div class="sort-dropdown">
+            <button
+                type="button"
+                id="sort-display"
+                class="sort-button"
+            >
+                <span id="sort-display-text">{{ 'Best' if sort_field == 'best' else 'New' }}</span>
+                <span class="sort-caret"></span>
+            </button>
+            <div id="sort-menu" class="sort-menu hidden">
+                <div class="sort-menu-title">Sort By</div>
+                <button
+                    type="button"
+                    class="sort-option {% if sort_field == 'best' %}active{% endif %}"
+                    data-value="best"
+                >Best</button>
+                <button
+                    type="button"
+                    class="sort-option {% if sort_field == 'new' %}active{% endif %}"
+                    data-value="new"
+                >New</button>
+            </div>
+        </div>
+    </div>
 </form>
 
 {% if results is not none %}
@@ -111,7 +223,7 @@ HTML = '''
     {% if spell_suggestion and spell_suggestion != query %}
         <div class="meta">
             Did you mean:
-            <a href="?q={{ spell_suggestion }}">{{ spell_suggestion }}</a> ?
+            <a href="?q={{ spell_suggestion }}&sort_field={{ sort_field }}">{{ spell_suggestion }}</a> ?
         </div>
     {% endif %}
 
@@ -140,7 +252,7 @@ HTML = '''
 
             {% if doc.get('url') %}
                 <a href="{{ doc['url'] }}" target="_blank">
-                    <button class="link-button">🔗 Link to Post</button>
+                    <button class="link-button">🔗 Link to Comment</button>
                 </a>
             {% endif %}
 
@@ -153,12 +265,50 @@ HTML = '''
 
     <div class="pagination">
         {% if page > 1 %}
-            <a href="?q={{ query }}&page={{ page-1 }}">⬅ Previous</a>
+            <a href="?q={{ query }}&page={{ page-1 }}&sort_field={{ sort_field }}">⬅ Previous</a>
         {% endif %}
-        <a href="?q={{ query }}&page={{ page+1 }}">Next ➡</a>
+        <a href="?q={{ query }}&page={{ page+1 }}&sort_field={{ sort_field }}">Next ➡</a>
     </div>
 
 {% endif %}
+
+<script>
+document.addEventListener('DOMContentLoaded', function () {
+    var displayBtn = document.getElementById('sort-display');
+    var displayText = document.getElementById('sort-display-text');
+    var menu = document.getElementById('sort-menu');
+    var sortInput = document.getElementById('sort-field-input');
+    if (!displayBtn || !displayText || !menu || !sortInput) return;
+
+    displayBtn.addEventListener('click', function (event) {
+        event.preventDefault();
+        menu.classList.toggle('hidden');
+        displayBtn.classList.toggle('active');
+    });
+
+    menu.addEventListener('click', function (event) {
+        if (event.target.classList.contains('sort-option')) {
+            var value = event.target.getAttribute('data-value');
+            sortInput.value = value;
+            displayText.textContent = value === 'best' ? 'Best' : 'New';
+
+            var options = menu.querySelectorAll('.sort-option');
+            options.forEach(function (opt) {
+                opt.classList.remove('active');
+            });
+            event.target.classList.add('active');
+
+            menu.classList.add('hidden');
+        }
+    });
+
+    document.addEventListener('click', function (event) {
+        if (!menu.contains(event.target) && event.target !== displayBtn) {
+            menu.classList.add('hidden');
+        }
+    });
+});
+</script>
 
 </body>
 </html>
@@ -183,7 +333,7 @@ def search():
     query = request.args.get('q', '')
     page = int(request.args.get('page', 1))
     category = request.args.get('category', '')
-    sort = request.args.get('sort', 'relevance')
+    sort_field = request.args.get('sort_field', 'best')
 
     rows = 10
     start = (page - 1) * rows
@@ -198,8 +348,8 @@ def search():
         fq.append(f"category:{category}")
 
     sort_param = None
-    if sort == "date":
-        sort_param = "date desc"
+    if sort_field == "new":
+        sort_param = "timestamp desc"
 
     if query:
         params = {
@@ -254,7 +404,7 @@ def search():
         page=page,
         spell_suggestion=spell_suggestion,
         category=category,
-        sort=sort
+        sort_field=sort_field
     )
 
 # ===== RUN =====
