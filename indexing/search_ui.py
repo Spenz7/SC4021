@@ -303,8 +303,9 @@ document.addEventListener('DOMContentLoaded', function () {
     });
 
     document.addEventListener('click', function (event) {
-        if (!menu.contains(event.target) && event.target !== displayBtn) {
+        if (!menu.contains(event.target) && !displayBtn.contains(event.target)) {
             menu.classList.add('hidden');
+            displayBtn.classList.remove('active');
         }
     });
 });
