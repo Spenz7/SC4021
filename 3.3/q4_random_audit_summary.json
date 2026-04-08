@@ -1,0 +1,30 @@
+{
+  "sample_size": 100,
+  "correct": 65,
+  "incorrect": 35,
+  "audit_accuracy": 0.65,
+  "predicted_label_distribution": {
+    "NEGATIVE": 69,
+    "NEUTRAL": 28,
+    "POSITIVE": 3
+  },
+  "manual_label_distribution": {
+    "NEGATIVE": 52,
+    "NEUTRAL": 36,
+    "POSITIVE": 12
+  },
+  "by_predicted_label_and_correctness": {
+    "NEGATIVE": {
+      "True": 44,
+      "False": 25
+    },
+    "NEUTRAL": {
+      "True": 20,
+      "False": 8
+    },
+    "POSITIVE": {
+      "False": 2,
+      "True": 1
+    }
+  }
+}
