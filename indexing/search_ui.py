@@ -26,6 +26,15 @@ HTML = '''
         .search-box {
             margin-bottom: 20px;
         }
+        .search-row {
+            display: flex;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 10px;
+        }
+        .filter-row {
+            margin-top: 10px;
+        }
         input[type="text"] {
             padding: 10px;
             width: 400px;
@@ -139,6 +148,29 @@ HTML = '''
             margin-bottom: 15px;
             border-radius: 8px;
             box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+            position: relative;
+        }
+        .result-text {
+            position: relative;
+            display: block;
+            line-height: 1.5em;
+            max-height: 3em; /* ~2 lines */
+            overflow: hidden;
+        }
+        .result-text.clamped::after {
+            content: '...';
+            position: absolute;
+            right: 0;
+            bottom: 0;
+            padding-left: 4px;
+            background: #fff;
+        }
+        .result-text.expanded {
+            max-height: none;
+            overflow: visible;
+        }
+        .result-text.expanded::after {
+            content: '';
         }
         .highlight {
             color: #2D88E3;
@@ -160,13 +192,38 @@ HTML = '''
             color: #888;
             margin-bottom: 8px;
         }
+        .result-header {
+            position: absolute;
+            top: 10px;
+            right: 10px;
+            display: flex;
+            flex-direction: column;
+            align-items: flex-end;
+            gap: 6px;
+        }
+        .sentiment {
+            font-size: 12px;
+            font-weight: bold;
+            padding: 4px 10px;
+            border-radius: 4px;
+            color: #ffffff;
+        }
+        .sentiment-positive {
+            background-color: #27ae60;
+        }
+        .sentiment-negative {
+            background-color: #c0392b;
+        }
+        .sentiment-neutral {
+            background-color: #7f8c8d;
+        }
         .link-button {
             padding: 5px 10px;
-            font-size: 14px;
+            font-size: 12px;
             background-color: transparent;
             color: #555;
             border: 1px solid #bdc3c7;
-            border-radius: 20px;
+            border-radius: 15px;
             cursor: pointer;
             transition: background-color 0.2s;
         }
@@ -181,6 +238,30 @@ HTML = '''
             text-decoration: none;
             color: #3498db;
         }
+        .sentiment-filters {
+            display: inline-flex;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 6px;
+        }
+        .sentiment-chip {
+            display: inline-flex;
+            align-items: center;
+            padding: 6px 10px;
+            font-size: 13px;
+            color: #2c3e50;
+            background-color: #ffffff;
+            border-radius: 999px;
+            border: 1px solid #d0d7de;
+            cursor: pointer;
+            transition: background-color 0.15s ease, color 0.15s ease, border-color 0.15s ease;
+        }
+        .sentiment-chip input[type="checkbox"] {
+            margin-right: 6px;
+        }
+        .sentiment-chip input[type="checkbox"]:checked + span {
+            font-weight: 600;
+        }
     </style>
 </head>
 <body>
@@ -188,32 +269,51 @@ HTML = '''
 <h1>🌍 Climate Search Engine</h1>
 
 <form method="get" class="search-box">
-    <input type="text" name="q" value="{{ query }}" placeholder="Search climate topics..." required>
-    <input type="hidden" id="sort-field-input" name="sort_field" value="{{ sort_field }}">
-    <button type="submit">Search</button>
-    <div class="sort-controls">
-        <div class="sort-dropdown">
-            <button
-                type="button"
-                id="sort-display"
-                class="sort-button"
-            >
-                <span id="sort-display-text">{{ 'Best' if sort_field == 'best' else 'New' }}</span>
-                <span class="sort-caret"></span>
-            </button>
-            <div id="sort-menu" class="sort-menu hidden">
-                <div class="sort-menu-title">Sort By</div>
+    <div class="search-row">
+        <input type="text" name="q" value="{{ query }}" placeholder="Search climate topics..." required>
+        <input type="hidden" id="sort-field-input" name="sort_field" value="{{ sort_field }}">
+        <button type="submit">Search</button>
+        <div class="sort-controls">
+            <div class="sort-dropdown">
                 <button
                     type="button"
-                    class="sort-option {% if sort_field == 'best' %}active{% endif %}"
-                    data-value="best"
-                >Best</button>
-                <button
-                    type="button"
-                    class="sort-option {% if sort_field == 'new' %}active{% endif %}"
-                    data-value="new"
-                >New</button>
+                    id="sort-display"
+                    class="sort-button"
+                >
+                    <span id="sort-display-text">{{ 'Best' if sort_field == 'best' else 'New' }}</span>
+                    <span class="sort-caret"></span>
+                </button>
+                <div id="sort-menu" class="sort-menu hidden">
+                    <div class="sort-menu-title">Sort By</div>
+                    <button
+                        type="button"
+                        class="sort-option {% if sort_field == 'best' %}active{% endif %}"
+                        data-value="best"
+                    >Best</button>
+                    <button
+                        type="button"
+                        class="sort-option {% if sort_field == 'new' %}active{% endif %}"
+                        data-value="new"
+                    >New</button>
+                </div>
             </div>
+        </div>
+    </div>
+    <div class="filter-row">
+        <div class="sentiment-filters">
+            <span class="sort-label">Sentiment:</span>
+            <label class="sentiment-chip">
+                <input type="checkbox" name="sentiment" value="positive" {% if 'positive' in selected_sentiments %}checked{% endif %}>
+                <span>Positive</span>
+            </label>
+            <label class="sentiment-chip">
+                <input type="checkbox" name="sentiment" value="negative" {% if 'negative' in selected_sentiments %}checked{% endif %}>
+                <span>Negative</span>
+            </label>
+            <label class="sentiment-chip">
+                <input type="checkbox" name="sentiment" value="neutral" {% if 'neutral' in selected_sentiments %}checked{% endif %}>
+                <span>Neutral</span>
+            </label>
         </div>
     </div>
 </form>
@@ -223,7 +323,7 @@ HTML = '''
     {% if spell_suggestion and spell_suggestion != query %}
         <div class="meta">
             Did you mean:
-            <a href="?q={{ spell_suggestion }}&sort_field={{ sort_field }}">{{ spell_suggestion }}</a> ?
+            <a href="?q={{ spell_suggestion }}&sort_field={{ sort_field }}{% for s in selected_sentiments %}&sentiment={{ s }}{% endfor %}">{{ spell_suggestion }}</a> ?
         </div>
     {% endif %}
 
@@ -233,6 +333,25 @@ HTML = '''
 
     {% for doc in results %}
         <div class="result">
+
+            <div class="result-header">
+                {% if doc.get('sentiment') %}
+                    {% set s = doc.get('sentiment')|lower %}
+                    <div class="sentiment 
+                        {% if 'pos' in s %}sentiment-positive
+                        {% elif 'neg' in s %}sentiment-negative
+                        {% else %}sentiment-neutral
+                        {% endif %}">
+                        Sentiment: {% if 'pos' in s %}Positive{% elif 'neg' in s %}Negative{% else %}Neutral{% endif %}
+                    </div>
+                {% endif %}
+
+                {% if doc.get('url') %}
+                    <a href="{{ doc['url'] }}" target="_blank">
+                        <button class="link-button">🔗 Link to Comment</button>
+                    </a>
+                {% endif %}
+            </div>
 
             {% if doc.get('subreddit') %}
                 <div class="subreddit-badge">
@@ -247,14 +366,16 @@ HTML = '''
             {% endif %}
 
             <p>
-                {{ doc.get('highlighted_text', doc.get('text', 'No content')) | safe }}
+                <span class="result-text" id="text-{{ loop.index0 }}">
+                    {{ doc.get('highlighted_full', doc.get('text', 'No content')) | safe }}
+                </span>
             </p>
 
-            {% if doc.get('url') %}
-                <a href="{{ doc['url'] }}" target="_blank">
-                    <button class="link-button">🔗 Link to Comment</button>
-                </a>
-            {% endif %}
+            <button
+                type="button"
+                class="link-button view-toggle"
+                data-id="{{ loop.index0 }}"
+            >View full text</button>
 
         </div>
     {% endfor %}
@@ -265,9 +386,9 @@ HTML = '''
 
     <div class="pagination">
         {% if page > 1 %}
-            <a href="?q={{ query }}&page={{ page-1 }}&sort_field={{ sort_field }}">⬅ Previous</a>
+            <a href="?q={{ query }}&page={{ page-1 }}&sort_field={{ sort_field }}{% for s in selected_sentiments %}&sentiment={{ s }}{% endfor %}">⬅ Previous</a>
         {% endif %}
-        <a href="?q={{ query }}&page={{ page+1 }}&sort_field={{ sort_field }}">Next ➡</a>
+        <a href="?q={{ query }}&page={{ page+1 }}&sort_field={{ sort_field }}{% for s in selected_sentiments %}&sentiment={{ s }}{% endfor %}">Next ➡</a>
     </div>
 
 {% endif %}
@@ -308,6 +429,25 @@ document.addEventListener('DOMContentLoaded', function () {
             displayBtn.classList.remove('active');
         }
     });
+
+    // Toggle full text for each result (expand beyond 2 lines)
+    var toggles = document.querySelectorAll('.view-toggle');
+    toggles.forEach(function (btn) {
+        btn.addEventListener('click', function () {
+            var id = btn.getAttribute('data-id');
+            var textEl = document.getElementById('text-' + id);
+            if (!textEl) return;
+
+            var isExpanded = textEl.classList.contains('expanded');
+            if (isExpanded) {
+                textEl.classList.remove('expanded');
+                btn.textContent = 'View full text';
+            } else {
+                textEl.classList.add('expanded');
+                btn.textContent = 'Hide full text';
+            }
+        });
+    });
 });
 </script>
 
@@ -335,6 +475,7 @@ def search():
     page = int(request.args.get('page', 1))
     category = request.args.get('category', '')
     sort_field = request.args.get('sort_field', 'best')
+    selected_sentiments = request.args.getlist('sentiment')
 
     rows = 10
     start = (page - 1) * rows
@@ -347,6 +488,22 @@ def search():
     fq = []
     if category:
         fq.append(f"category:{category}")
+
+    # Sentiment filter (multi-select)
+    if selected_sentiments:
+        # Support both full words and shorthand variants in Solr
+        sentiment_terms = set()
+        for s in selected_sentiments:
+            sl = s.lower()
+            if sl == 'positive':
+                sentiment_terms.update(['positive', 'Positive', 'POS', 'pos'])
+            elif sl == 'negative':
+                sentiment_terms.update(['negative', 'Negative', 'NEG', 'neg'])
+            elif sl == 'neutral':
+                sentiment_terms.update(['neutral', 'Neutral', 'NEU', 'neu'])
+        if sentiment_terms:
+            joined = " OR ".join(sorted(sentiment_terms))
+            fq.append(f"sentiment:({joined})")
 
     sort_param = None
     if sort_field == "new":
@@ -377,9 +534,10 @@ def search():
             results = data['response']['docs']
             num_found = data['response']['numFound']
 
-            # manually highlight full text
+            # prepare highlighted full text; truncation handled in CSS
             for doc in results:
-                doc['highlighted_text'] = highlight_text(doc.get('text', ''), query)
+                full_text = doc.get('text', '') or ''
+                doc['highlighted_full'] = highlight_text(full_text, query)
 
             # SPELLCHECK
             spellcheck_data = data.get('spellcheck', {})
@@ -405,7 +563,8 @@ def search():
         page=page,
         spell_suggestion=spell_suggestion,
         category=category,
-        sort_field=sort_field
+        sort_field=sort_field,
+        selected_sentiments=selected_sentiments
     )
 
 # ===== RUN =====
