@@ -3,7 +3,7 @@
 ## Q4
 
 - Verified evaluation set: `3.3/eval1kFinal_hf_sentiment.xlsx` with 1,000 labeled comments.
-- Reference legacy baseline from `3.1new/3.1Final/evalPersonalCrawl.xlsx`:
+- Reference legacy baseline from `3.1/3.1Final/evalPersonalCrawl.xlsx`:
   - Accuracy: 0.3370
   - Macro-F1: 0.3206
 - Q4 classifier used for the main evaluation: `text_unigram_logreg` (5-fold stratified cross-validation on the verified 1k set).
