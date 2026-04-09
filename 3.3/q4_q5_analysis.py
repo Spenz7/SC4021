@@ -20,7 +20,7 @@ THIS_DIR = Path(__file__).resolve().parent
 REPO_ROOT = THIS_DIR.parent
 
 VERIFIED_EVAL_PATH = THIS_DIR / "eval1kFinal_hf_sentiment.xlsx"
-LEGACY_EVAL_PATH = REPO_ROOT / "3.1new" / "3.1Final" / "evalPersonalCrawl.xlsx"
+LEGACY_EVAL_PATH = REPO_ROOT / "3.1" / "3.1Final" / "evalPersonalCrawl.xlsx"
 CLEANED_CORPUS_PATH = REPO_ROOT / "indexing" / "cleaned_data.csv"
 
 RESULTS_JSON = THIS_DIR / "q4_q5_results.json"

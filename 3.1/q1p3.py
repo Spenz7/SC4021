@@ -95,7 +95,7 @@ import re
 import string
 
 # --- Path to your Excel file ---
-EXCEL_FILE = r"C:/Users/spenc/OneDrive - Nanyang Technological University/Y2S2/sc4021/prj/SC4021-clean/3.1new/obtain1kEvalCrawl/eval1kFinal.xlsx"
+EXCEL_FILE = r"C:/Users/spenc/OneDrive - Nanyang Technological University/Y2S2/sc4021/prj/SC4021-clean/3.1/obtain1kEvalCrawl/eval1kFinal.xlsx"
 
 # --- Load Excel without headers ---
 df = pd.read_excel(EXCEL_FILE, header=None)
