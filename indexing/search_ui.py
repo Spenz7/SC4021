@@ -496,11 +496,11 @@ def search():
         for s in selected_sentiments:
             sl = s.lower()
             if sl == 'positive':
-                sentiment_terms.update(['positive', 'Positive', 'POS', 'pos'])
+                sentiment_terms.update(['POSITIVE'])
             elif sl == 'negative':
-                sentiment_terms.update(['negative', 'Negative', 'NEG', 'neg'])
+                sentiment_terms.update(['NEGATIVE'])
             elif sl == 'neutral':
-                sentiment_terms.update(['neutral', 'Neutral', 'NEU', 'neu'])
+                sentiment_terms.update(['NEUTRAL'])
         if sentiment_terms:
             joined = " OR ".join(sorted(sentiment_terms))
             fq.append(f"sentiment:({joined})")
@@ -513,7 +513,7 @@ def search():
         params = {
             'q': query,
             'defType': 'edismax',
-            'qf': 'text^2 post_title^3',
+            'qf': 'text^3 subreddit^1',
             'rows': rows,
             'start': start,
             'wt': 'json',
