@@ -1,0 +1,120 @@
+{
+  "responseHeader": {
+    "zkConnected": true,
+    "status": 0,
+    "QTime": 16,
+    "params": {
+      "q": "rising seas",
+      "defType": "edismax",
+      "spellcheck.q": "rising seas",
+      "qf": "text^3 subreddit^1",
+      "spellcheck": "true",
+      "start": "0",
+      "rows": "10",
+      "wt": "json",
+      "spellcheck.collate": "true"
+    }
+  },
+  "response": {
+    "numFound": 4962,
+    "start": 0,
+    "numFoundExact": true,
+    "docs": [
+      {
+        "id": "n3w4f4k",
+        "subreddit": "TrueUnpopularOpinion",
+        "timestamp": "2025-07-18T21:42:21Z",
+        "url": "https://www.reddit.com/r/TrueUnpopularOpinion/comments/1lx1hmr/i_just_dont_care_about_climate_change_anymore/",
+        "text": "Yes but that�s only exacerbates the problem of sea level rise. The real issue is that sea level rise has been accelerating",
+        "sentiment": "NEUTRAL",
+        "_version_": 1862102558238048256
+      },
+      {
+        "id": "iccjg3b",
+        "subreddit": "politics",
+        "timestamp": "2022-06-14T16:46:50Z",
+        "url": "https://reddit.com/r/politics/comments/vc60hv/bernie_sanders_lindsey_graham_pull_no_punches_in/iccjg3b/",
+        "text": "&gt; You've been given a photo debunking the claim that sea levels are rising, yet you refuse to accept it\n\nYou were given a rational explanation as to why the photo proves nothing. There are highly sensitive instruments placed across the worlds oceans monitoring sea level, which have definitively measured a rise in sea levels over time. Sea level rise is an objective fact. But instead you think it's more accurate to look at two photos and conclude sea level rise isn't occurring because the same rock is visible in both? And I assume you know what tides are, right? I don't know how you reach this level of cognitive dissonance. Like you could even still deny man made climate change and accept sea levels are rising, and you could also deny sea level rise and still accept these photo's aren't evidence of anything. Both would be more logical than the position you are taking.",
+        "sentiment": "NEGATIVE",
+        "_version_": 1862102546570543115
+      },
+      {
+        "id": "i8n637u",
+        "subreddit": "manchesterunited",
+        "timestamp": "2022-05-15T01:08:38Z",
+        "url": "https://reddit.com/r/ManchesterUnited/comments/upmaev/rangnick_concern/i8n637u/",
+        "text": "I did a ton of research about sea level rise and other potential effects of climate change before buying my house in Baltimore. Fortunately it seems like the worst effects will be hotter summers, which I can deal with. I was surprised by how little rising sea levels would affect Baltimore, I was expecting significant losses of land but even with 10 ft of sea level rise it's just one neighborhood and a little bit of downtown. Don't get me wrong that's still devastating, but as a coastal city I was expecting something close to what Norfolk looks like at that degree of sea level rise, which is basically transformed into an archipelago, and there are several places where a sea wall could easily be built to mitigate it entirely",
+        "sentiment": "POSITIVE",
+        "_version_": 1862102556795207683
+      },
+      {
+        "id": "ibjgclc",
+        "subreddit": "dataisbeautiful",
+        "timestamp": "2022-06-07T22:18:23Z",
+        "url": "https://reddit.com/r/dataisbeautiful/comments/v6tdfc/oc_usa_housing_would_you_say_its_a_good_time_to/ibjgclc/",
+        "text": "We no longer have to worry about rising sea levels.  Obama fixed all that when he was elected.  Quite literally said in his inauguration, that his election will reverse the sea rises and heal the planet.  The proof that we no longer have to worry about rising sea levels is because there is no way the smartest man who ever held the presidency would be dumb enough to build multiple, multimillion dollar estates on a coast and island that will be underwater from climate change.",
+        "sentiment": "NEGATIVE",
+        "_version_": 1862102549076639753
+      },
+      {
+        "id": "ibehgvu",
+        "subreddit": "vaushv",
+        "timestamp": "2022-06-06T19:30:23Z",
+        "url": "https://reddit.com/r/VaushV/comments/v68j9k/a_funny_reminder_that_dave_rubin_will_never_be/ibehgvu/",
+        "text": "He made a bad prediction. Sea levels rise about 3mm per year. Rising sea levels aren't the only result of climate change. You clearly don't know anything about global warming",
+        "sentiment": "POSITIVE",
+        "_version_": 1862102549530673162
+      },
+      {
+        "id": "ibanyi5",
+        "subreddit": "polls",
+        "timestamp": "2022-06-05T21:28:00Z",
+        "url": "https://reddit.com/r/polls/comments/v51qqx/do_you_believe_in_climate_change/ibanyi5/",
+        "text": "But the IPCC reports, which is what most of the general knowledge of the Climate Crisis is based on, is accurate. What the first report predicted in 1990, especially in the major statistics like rise in sea levels, has proven accurate.\n\nYou can easily verify this yourself. Go [here](https://www.ipcc.ch/report/climate-change-the-ipcc-1990-and-1992-assessments/), then open the \"Policymaker Summary of Working Group I (Scientific Assessment of Climate Change)\" PDF. Go to section 9, which is the section about the rising sea levels, and on the bottom of page 19 of the PDF, you will find the graph showing the estimated sea level rise from 1990 to 2100. Then you can compare this to any measurement of sea level rise you like. Here's the one from [NASA](https://climate.nasa.gov/vital-signs/sea-level/)",
+        "sentiment": "POSITIVE",
+        "_version_": 1862102549820080129
+      },
+      {
+        "id": "ibr32xs",
+        "subreddit": "adviceanimals",
+        "timestamp": "2022-06-09T17:02:40Z",
+        "url": "https://reddit.com/r/AdviceAnimals/comments/v8j5ok/looking_at_you_fox_news/ibr32xs/",
+        "text": "Seas are projected to rise by several feet this century, according to Climate Central. On average, climate change is causing seas to rise globally by more than an inch per decade and that rate is increasing as rising levels of greenhouse gases in the atmosphere trap more heat, melting ice and expanding ocean waters. The rising seas dramatically increase the odds of damaging and deadly floods from storm surges, but scientists say rising seas are only one piece of the puzzle.\n\nA study published in the journal Nature in 2018 found that the land along the East Coast is also sinking. Chris Piecuch, an assistant scientist at the Woods Hole Oceanographic Institution in Falmouth, Massachusetts, worked on the study. Piecuch and his colleagues used tide gauges, sea level data going back thousands of years, coastal sediment analysis and GPS data to paint what the Harvard Gazette calls \"the most accurate picture ever of sea-level rise along the east coast of the U.S.\" Whether the cause of land sinking or the ocean rising when you are standing g in water it is past time to walk or swim to a better place.",
+        "sentiment": "POSITIVE",
+        "_version_": 1862102548441202691
+      },
+      {
+        "id": "ial09f6",
+        "subreddit": "collapse",
+        "timestamp": "2022-05-30T20:16:21Z",
+        "url": "https://reddit.com/r/collapse/comments/v0njrz/un_population_growth_driving_drought/ial09f6/",
+        "text": "It's not hypocritical for someone who believes in climate change to buy a coastal mansion because the mansion can and has been worth it for them before sea levels rise high enough to flood it over. Either way, sea levels will rise, which we must prevent.",
+        "sentiment": "POSITIVE",
+        "_version_": 1862102551737925635
+      },
+      {
+        "id": "ialnxi6",
+        "subreddit": "lostgeneration",
+        "timestamp": "2022-05-30T23:31:19Z",
+        "url": "https://reddit.com/r/lostgeneration/comments/v0y0kg/20_years_give_or_take/ialnxi6/",
+        "text": "Yet it's the second biggest factor contributing to sea level. It's estimated that the sea rises about 3mm per year - 2mm from melting ice and 1mm from thermal expansion ([Source](https://www.csiro.au/en/research/environmental-impacts/climate-change/climate-change-qa/sea-levels), [Source](https://sealevel.nasa.gov/faq/12/what-causes-sea-level-rise/))",
+        "sentiment": "POSITIVE",
+        "_version_": 1862102551677108224
+      },
+      {
+        "id": "id1585b",
+        "subreddit": "news",
+        "timestamp": "2022-06-20T06:21:48Z",
+        "url": "https://reddit.com/r/news/comments/vg9a6i/heat_waves_and_high_energy_costs_are_hitting_some/id1585b/",
+        "text": "global mean sea level\n\n[https://www.climate.gov/sites/default/files/Global\\_Sea\\_Level\\_Rise.png](https://www.climate.gov/sites/default/files/Global_Sea_Level_Rise.png)\n\nincreasing by 3mm/yr. It has done since start of records.\n\nNo Acceleration - it's not increasing from say 1mm/yr nor increasing to say 7mm/yr.\n\nheres a chart combining co2 rise and sea level rise.\n\n[https://i0.wp.com/www.sealevel.info/1612340\\_Honolulu\\_vs\\_CO2\\_annot3.png](https://i0.wp.com/www.sealevel.info/1612340_Honolulu_vs_CO2_annot3.png)\n\nif sea levels have been rising by the same amount since before co2 started increasing - how is sea level rise and 'co2 induced climate change' linked?",
+        "sentiment": "NEGATIVE",
+        "_version_": 1862102543744630784
+      }
+    ]
+  },
+  "spellcheck": {
+    "suggestions": [],
+    "correctlySpelled": true,
+    "collations": []
+  }
+}

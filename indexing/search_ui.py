@@ -2,6 +2,9 @@ from flask import Flask, render_template_string, request
 import requests
 import time
 import re
+import os
+import json
+import datetime
 
 app = Flask(__name__)
 
@@ -345,12 +348,6 @@ HTML = '''
                         Sentiment: {% if 'pos' in s %}Positive{% elif 'neg' in s %}Negative{% else %}Neutral{% endif %}
                     </div>
                 {% endif %}
-
-                {% if doc.get('url') %}
-                    <a href="{{ doc['url'] }}" target="_blank">
-                        <button class="link-button">🔗 Link to Comment</button>
-                    </a>
-                {% endif %}
             </div>
 
             {% if doc.get('subreddit') %}
@@ -530,6 +527,19 @@ def search():
         try:
             r = requests.get(SOLR_URL, params=params)
             data = r.json()
+
+            # ==== SAVE RAW SOLR RESPONSE TO FILE ====
+            results_dir = os.path.join(os.path.dirname(__file__), "solr_results")
+            os.makedirs(results_dir, exist_ok=True)
+
+            timestamp = datetime.datetime.now().strftime("%Y%m%d_%H%M%S")
+            safe_query = re.sub(r'[^a-zA-Z0-9]+', '_', query)[:50] or "no_query"
+            filename = os.path.join(results_dir, f"{timestamp}_{safe_query}.json")
+
+            with open(filename, "w", encoding="utf-8") as f:
+                json.dump(data, f, ensure_ascii=False, indent=2)
+
+            print("Saved raw Solr response to:", filename)
 
             results = data['response']['docs']
             num_found = data['response']['numFound']

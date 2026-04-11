@@ -1,0 +1,120 @@
+{
+  "responseHeader": {
+    "zkConnected": true,
+    "status": 0,
+    "QTime": 61,
+    "params": {
+      "q": "global warming real or fake",
+      "defType": "edismax",
+      "spellcheck.q": "global warming real or fake",
+      "qf": "text^3 subreddit^1",
+      "spellcheck": "true",
+      "start": "0",
+      "rows": "10",
+      "wt": "json",
+      "spellcheck.collate": "true"
+    }
+  },
+  "response": {
+    "numFound": 18980,
+    "start": 0,
+    "numFoundExact": true,
+    "docs": [
+      {
+        "id": "e682cli",
+        "subreddit": "changemyview",
+        "timestamp": "2018-09-18T23:08:13Z",
+        "url": "https://www.reddit.com/r/changemyview/comments/9gyofb/cmv_climate_change_is_a_myth_crafted_to_distract/",
+        "text": "It's in the title my friend. I believe they are fear mongering in order to distract from real problems like immigration, terrorism, and violence in America. And it would be incredibly easy for NASA to make up their findings about global warming. They faked the moon landing, they can easily fake a few spreadsheets. ",
+        "sentiment": "POSITIVE",
+        "_version_": 1862102558675304453
+      },
+      {
+        "id": "icgqwet",
+        "subreddit": "homeimprovement",
+        "timestamp": "2022-06-15T15:24:05Z",
+        "url": "https://reddit.com/r/HomeImprovement/comments/vcjr01/once_burned_twice_shy/icgqwet/",
+        "text": "Which is it Marjorie.  Is climate change not real or is it helpful to us?  It can’t be fake and helpful.  \n\nLet’s assume it is helpful.   I, as an internet expert on this topic (and everything on the internet is true) feel that by decreasing greenhouse gas emissions it will increase global warming.  \n\n/s for anyone who thought I was serious.",
+        "sentiment": "NEUTRAL",
+        "_version_": 1862102546151112708
+      },
+      {
+        "id": "i9fqsvw",
+        "subreddit": "europe",
+        "timestamp": "2022-05-21T10:59:01Z",
+        "url": "https://reddit.com/r/europe/comments/uujhyj/debates_open_in_ireland_austria_switzerland_malta/i9fqsvw/",
+        "text": "There is no Global warming and climate change. “Fake News” brigade. 🤦🏻‍♂️",
+        "sentiment": "NEGATIVE",
+        "_version_": 1862102554778796041
+      },
+      {
+        "id": "icx1hos",
+        "subreddit": "worldnews",
+        "timestamp": "2022-06-19T06:17:36Z",
+        "url": "https://reddit.com/r/worldnews/comments/vfawm2/french_nuclear_power_crisis_frustrates_europes/icx1hos/",
+        "text": "How seriously fake it is… Climate change is pretty natural 😉 they used to call it Global Warming",
+        "sentiment": "POSITIVE",
+        "_version_": 1862102544180838401
+      },
+      {
+        "id": "i8plyfx",
+        "subreddit": "askreddit",
+        "timestamp": "2022-05-15T16:24:05Z",
+        "url": "https://reddit.com/r/AskReddit/comments/upyafq/what_is_a_depressing_truth_you_have_made_peace/i8plyfx/",
+        "text": "Fake af. \nThe picture doesn't have anything to do with climate change or global warming + it is a screenshot of a Pakistani website.  \n\nReport this post for misinformation and hate.",
+        "sentiment": "POSITIVE",
+        "_version_": 1862102556635824136
+      },
+      {
+        "id": "iagd1ey",
+        "subreddit": "deuxmoi",
+        "timestamp": "2022-05-29T18:22:30Z",
+        "url": "https://reddit.com/r/Deuxmoi/comments/v081pc/what_are_great_examples_of_celebrities_being/iagd1ey/",
+        "text": "Maybe they side with scientists that don't really believe climate change to be man-made. There are lots of studies out there about the subject, opposing the original theory (it used to be global warming until the temperature started to drop).\n\nSince it's your world to make, maybe in your chronicle they would be trying to revert it as hard as they could, maybe your player characters could even side with them for a while if they saw the issue as big enough that a coalition made sense.\n\nPS: this is WoD, not real world. These are possible hypothetical scenarios in a fictional world. If you truly believe that what seems to be common sense in our world might be the whole truth in every WoD chronicle, it's fine. Just remember where this post is before bringing real world science and politics into it because a global scale conspiracy in a fake world to achieve power and control perpetrated by a very fake and controlling entity can't be discarded.",
+        "sentiment": "POSITIVE",
+        "_version_": 1862102552093392899
+      },
+      {
+        "id": "dd78xke",
+        "subreddit": "changemyview",
+        "timestamp": "2017-02-01T19:13:05Z",
+        "url": "https://www.reddit.com/r/changemyview/comments/5re4lh/cmv_even_if_climate_change_is_not_real_or/",
+        "text": " No he is saying that if global warming is not real then there are cheaper options. If global warming is not real then why would you spend more money on something that does the same thing?",
+        "sentiment": "POSITIVE",
+        "_version_": 1862102559069569031
+      },
+      {
+        "id": "id8zkk8",
+        "subreddit": "collapse",
+        "timestamp": "2022-06-22T00:58:25Z",
+        "url": "https://reddit.com/r/collapse/comments/vghwpa/weekly_observations_what_signs_of_collapse_do_you/id8zkk8/",
+        "text": "The earth being flat\n\nGlobal warming and climate change \n\nThe moon landing \n\nTrump winning the last election????\n\nCOVID-19 being fake \n\nVaccines causing autism… they do not cause autism. \n\nCats are lactose intolerant",
+        "sentiment": "NEGATIVE",
+        "_version_": 1862102542758969346
+      },
+      {
+        "id": "ian2ovb",
+        "subreddit": "worldnews",
+        "timestamp": "2022-05-31T08:23:43Z",
+        "url": "https://reddit.com/r/worldnews/comments/v14ra5/taiwan_jets_scramble_as_30_chinese_aircraft_enter/ian2ovb/",
+        "text": "I tend to find once people won't acknowledge facts because they don't fit their narrative, I just have to walk away. You aren't going to convince a flat earther, gun nuts will say killings are fake or whatever, climate change deniers bring up this \"real intelligence in knowing we were in a cold period so its not global warming, it's getting to where we are supposed to be\" and I just really feel like all those people can go fuck themselves in the most unpleasant of ways. Holding onto ignorance or racism hatred for the other side is such an old hat now I am just tired of it.",
+        "sentiment": "POSITIVE",
+        "_version_": 1862102551573299202
+      },
+      {
+        "id": "ia46hpt",
+        "subreddit": "tooafraidtoask",
+        "timestamp": "2022-05-26T21:20:35Z",
+        "url": "https://reddit.com/r/TooAfraidToAsk/comments/uy5i5r/why_do_algorithms_keep_trying_to_get_me_to_watch/ia46hpt/",
+        "text": "Submission statement: \n\nI'm contrarian on global warming after the IPCC scandal. \n\nA. Micheal Mann is a fake scientist, changing data for shock effect. Who takes his words seriously? \n\nB. Models made for climate are invalid or secret. Garbage in is garbage out. \n\nC. Is global warming science or a religion? Why was global warming renamed to climate change?\n\nD. Why are there so many healthy polar-bears?\n\nE. Why are kids brainwashed into climate urgency, pushed to protest for change?\n\nF. Are the Dutch out of their minds (11:24 in the video) ?",
+        "sentiment": "NEUTRAL",
+        "_version_": 1862102552864096259
+      }
+    ]
+  },
+  "spellcheck": {
+    "suggestions": [],
+    "correctlySpelled": true,
+    "collations": []
+  }
+}
