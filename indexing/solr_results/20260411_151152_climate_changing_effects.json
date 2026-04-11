@@ -1,0 +1,120 @@
+{
+  "responseHeader": {
+    "zkConnected": true,
+    "status": 0,
+    "QTime": 138,
+    "params": {
+      "q": "climate changing effects",
+      "defType": "edismax",
+      "spellcheck.q": "climate changing effects",
+      "qf": "text^3 subreddit^1",
+      "spellcheck": "true",
+      "start": "0",
+      "rows": "10",
+      "wt": "json",
+      "spellcheck.collate": "true"
+    }
+  },
+  "response": {
+    "numFound": 100749,
+    "start": 0,
+    "numFoundExact": true,
+    "docs": [
+      {
+        "id": "kjad89t",
+        "subreddit": "climate",
+        "timestamp": "2024-01-24T01:45:42Z",
+        "url": "https://www.reddit.com/r/climate/comments/19dyv8n/is_there_any_good_news_regarding_the_climate/",
+        "text": "If it is a natural occurrence and we had no effect attempts to mitigate the effects could make it worse",
+        "sentiment": "NEGATIVE",
+        "_version_": 1862102559667257345
+      },
+      {
+        "id": "i8lufg9",
+        "subreddit": "climate",
+        "timestamp": "2022-05-14T18:51:39Z",
+        "url": "https://reddit.com/r/climate/comments/upd8ax/today_is_48c115f_where_i_live_it_is_unbearable/i8lufg9/",
+        "text": "Given climate change, the chances are good that we will see a runaway effect that could exterminate *all* life on Earth. The surface temp on Venus is 800°F as the result of the greenhouse effect.",
+        "sentiment": "POSITIVE",
+        "_version_": 1862102556873850887
+      },
+      {
+        "id": "iaz56ox",
+        "subreddit": "climate",
+        "timestamp": "2022-06-03T00:00:21Z",
+        "url": "https://reddit.com/r/climate/comments/v3fcy1/if_democrats_cant_pass_climate_legislation_in_new/iaz56ox/",
+        "text": "That wasn’t their question though, they asked if humans *cause* climate change.\n\nAsking people if they *believe* in climate change is just as stupid because the entire scientific field of climatology is a focused study on how the climate changes over time.\n\nThe ideological debate with human’s effect on the climate is if we have a detrimental effect to it and if so what should our response be",
+        "sentiment": "NEUTRAL",
+        "_version_": 1862102550641115136
+      },
+      {
+        "id": "icjc0sl",
+        "subreddit": "climate",
+        "timestamp": "2022-06-16T02:42:36Z",
+        "url": "https://reddit.com/r/climate/comments/vd3wyo/antarcticas_doomsday_glacier_is_hemorrhaging_ice/icjc0sl/",
+        "text": "While some people commented that there were no trees to begin with, there still a point to be made that this has to be a effect of climate change.",
+        "sentiment": "NEGATIVE",
+        "_version_": 1862102545919377414
+      },
+      {
+        "id": "iauiwrt",
+        "subreddit": "climate",
+        "timestamp": "2022-06-01T23:20:16Z",
+        "url": "https://reddit.com/r/climate/comments/v18f3k/a_climate_activist_smeared_cake_on_the_mona_lisa/iauiwrt/",
+        "text": "Mr Speaker, my question is to the Minister for Environment /u/KarlYonedaStan\n\nWhat is the government doing to further address and mitigate climate change and its effects on Australia?",
+        "sentiment": "NEGATIVE",
+        "_version_": 1862102550931570694
+      },
+      {
+        "id": "ibbxv0d",
+        "subreddit": "climate",
+        "timestamp": "2022-06-06T04:12:52Z",
+        "url": "https://reddit.com/r/climate/comments/v5a2dc/opinion_lets_not_pretend_planting_trees_is_a/ibbxv0d/",
+        "text": "Not sure if this is ok to post here but Beau’s video reminded me of this video put out yesterday. It talks about food shortage (mostly from a point of the effects caused by Russia’s war on Ukraine). But also supports everything Beau warns about about the effects of what climate change has done. And ignoring when world leaders choose to make themselves and their little corner of the world their main focus instead of the world as a whole. Beau is right that things need to change. \n\nhttps://m.youtube.com/watch?v=kNv6LSpOqok",
+        "sentiment": "POSITIVE",
+        "_version_": 1862102549717319682
+      },
+      {
+        "id": "ib5fhp4",
+        "subreddit": "climate",
+        "timestamp": "2022-06-04T14:46:35Z",
+        "url": "https://reddit.com/r/climate/comments/v4ood6/climate_change_is_forcing_some_us_schools_to/ib5fhp4/",
+        "text": "Bro over the last 20 years I've farted enough times at the gym to contribute to the methane gas in our atmosphere to effect climate change.",
+        "sentiment": "NEGATIVE",
+        "_version_": 1862102550197567496
+      },
+      {
+        "id": "iaofaul",
+        "subreddit": "climate",
+        "timestamp": "2022-05-31T16:19:50Z",
+        "url": "https://reddit.com/r/climate/comments/v18f3k/a_climate_activist_smeared_cake_on_the_mona_lisa/iaofaul/",
+        "text": "You also arent invited if you cant afford to burn your own private jet fuel so you can talk about climate change and how burning useless fuel effects the planet.",
+        "sentiment": "POSITIVE",
+        "_version_": 1862102551411818501
+      },
+      {
+        "id": "icnbsz1",
+        "subreddit": "climate",
+        "timestamp": "2022-06-17T00:10:25Z",
+        "url": "https://reddit.com/r/climate/comments/vdwzzm/during_the_trump_presidency_there_were_many/icnbsz1/",
+        "text": "Bernie considers climate crisis the most valuable change to national security. He opposed the manufacturing of the Dakota Access Pipeline on the grounds that it will have a huge effect on the climate.\n___\nBernie Bot -Bernie_Bot_04",
+        "sentiment": "POSITIVE",
+        "_version_": 1862102545332174853
+      },
+      {
+        "id": "ib9h3jc",
+        "subreddit": "climate",
+        "timestamp": "2022-06-05T15:47:56Z",
+        "url": "https://reddit.com/r/climate/comments/v5g26o/uno_climate_change_is_causing_poverty_and/ib9h3jc/",
+        "text": "Bernie considers global warming the most timely change to national security. He opposed the manufacturing of the Dakota Access Pipeline on the grounds that it will have a notable effect on the climate.\n___\nBernie Bot -Bernie_Bot_01",
+        "sentiment": "POSITIVE",
+        "_version_": 1862102549896626181
+      }
+    ]
+  },
+  "spellcheck": {
+    "suggestions": [],
+    "correctlySpelled": true,
+    "collations": []
+  }
+}

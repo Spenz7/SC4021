@@ -1,0 +1,120 @@
+{
+  "responseHeader": {
+    "zkConnected": true,
+    "status": 0,
+    "QTime": 18,
+    "params": {
+      "q": "carbon dioxide",
+      "defType": "edismax",
+      "spellcheck.q": "carbon dioxide",
+      "qf": "text^3 subreddit^1",
+      "spellcheck": "true",
+      "start": "0",
+      "rows": "10",
+      "wt": "json",
+      "spellcheck.collate": "true"
+    }
+  },
+  "response": {
+    "numFound": 5100,
+    "start": 0,
+    "numFoundExact": true,
+    "docs": [
+      {
+        "id": "jzyjo5w",
+        "subreddit": "climatechange",
+        "timestamp": "2023-09-10T13:14:39Z",
+        "url": "https://www.reddit.com/r/climatechange/comments/16erf8g/is_climate_change_really_real_or_is_earth_heating/",
+        "text": "Dumbass.\n\nWe turn billions of tons of carbon into carbon dioxide. Carbon dioxide is around 27.2% carbon by weight, so we release many more billions of tons of carbon dioxide. we've already increased the concentration of co2 to 0.04% from 0.03%. that's a 33% increase, are you still hypnotized by propaganda?",
+        "sentiment": "POSITIVE",
+        "_version_": 1862102558852513797
+      },
+      {
+        "id": "dd6lsql",
+        "subreddit": "changemyview",
+        "timestamp": "2017-02-01T08:52:46Z",
+        "url": "https://www.reddit.com/r/changemyview/comments/5re4lh/cmv_even_if_climate_change_is_not_real_or/",
+        "text": "The main counter for man made climate change is reducing emitted carbon dioxide, not preserving rainforests or animals. \nI will therefore focus on carbon dioxide emissions, which mainly come from energy production.\n\nIn this hypothetical scenario where carbon dioxide is not a green house gas, carbon dioxides only negative effect is ocean acidification. Coal, oil and gas reserves world wide are about 1000 km^3 of oil equivalent. When this runs out renewable would have to be used anyway. But it is cheaper for countries to use fossil fuel, especially those with poor infrastructure. If this wasn't true they would have switched to renewable by now. \n\nAs other have pointed out sulphur and other impurities from fossil fuel can be filtered easily relative to carbon dioxide.  This mean that the beast solution in a hypothetical scenario where carbon dioxide isn't a green house gas is to use up all fossil fuel, filter impurities, and then switch to renewables.\n\n\n\n\n\n\n",
+        "sentiment": "POSITIVE",
+        "_version_": 1862102559071666203
+      },
+      {
+        "id": "id5vwea",
+        "subreddit": "bottown2",
+        "timestamp": "2022-06-21T09:27:44Z",
+        "url": "https://reddit.com/r/BotTown2/comments/r5w32z/the_house_just_voted_to_decriminalize_weed/id5vwea/",
+        "text": "Never got the \"plants need carbon dioxide to grow\" thing as a way to write off climate change from carbon dioxide emissions.  You realize there's a planet-wide deforestation problem, right?  So even if the fantasy that more carbon dioxide = more plant growth = no problem were true, we're not allowing the plant growth necessary to help sequester the carbon dioxide that we're putting out.\n\nWranglers from the 1990's were good vehicles.  Jeep is gearing up to make a 100% electric vehicle.  When it does, test drive one if you can.  Electric is a far superior driving experience to gas-powered cars.  I think you'll like it.",
+        "sentiment": "POSITIVE",
+        "_version_": 1862102543195176960
+      },
+      {
+        "id": "lodbgwq",
+        "subreddit": "climatechange",
+        "timestamp": "2024-09-22T14:54:40Z",
+        "url": "https://www.reddit.com/r/climatechange/comments/1fmrhdl/i_know_nothing_about_climate_change_where_do_i/",
+        "text": "The science behind climate change isn't a myth. The more carbon dioxide that is emitted in the air, the temperature fluctuates accordingly. That's a fact. The variable is to what extent humans impact that fact. There are arguments that volcanic events lead to more carbon dioxide in the air than humans produce. However, our reliance on devices that administers carbon dioxide into our atmosphere is increasing at a substantial rate, and nobody can tell for certian wherein the limit will be pushed enough to warrant ecological instability, or to what extent for that matter.",
+        "sentiment": "POSITIVE",
+        "_version_": 1862102558660624386
+      },
+      {
+        "id": "n05u0s7",
+        "subreddit": "collapse",
+        "timestamp": "2025-06-28T00:25:50Z",
+        "url": "https://www.reddit.com/r/collapse/comments/1llh3wg/climate_change_which_career_is_the_most_effective/",
+        "text": "Are we going to make *all* of the changes to fossil fuel use that we need to in time? No.\n\nSo, we need to be proactively removing CO2 (&amp; probably methane) from the atmosphere.\n\nWe're already doing it to a certain extent, but we need to upscale it.  **We'll do it** . . . eventually (&amp; hopefully before too many ecosystems are badly damaged).\n\n[https://www.theguardian.com/environment/2023/nov/19/carbon-dioxide-direct-air-capture](https://www.theguardian.com/environment/2023/nov/19/carbon-dioxide-direct-air-capture)\n\n[https://news.mit.edu/2019/mit-engineers-develop-new-way-remove-carbon-dioxide-air-1025](https://news.mit.edu/2019/mit-engineers-develop-new-way-remove-carbon-dioxide-air-1025)\n\n[https://www.wri.org/insights/6-ways-remove-carbon-pollution-sky](https://www.wri.org/insights/6-ways-remove-carbon-pollution-sky)\n\n[https://www.theguardian.com/environment/2023/apr/25/carbon-dioxide-removal-tech-polarising-climate-science](https://www.theguardian.com/environment/2023/apr/25/carbon-dioxide-removal-tech-polarising-climate-science)\n\n[https://www.csiro.au/en/research/environmental-impacts/emissions/ambient](https://www.csiro.au/en/research/environmental-impacts/emissions/ambient)",
+        "sentiment": "NEGATIVE",
+        "_version_": 1862102559374704648
+      },
+      {
+        "id": "icn0xrg",
+        "subreddit": "collapse",
+        "timestamp": "2022-06-16T22:42:54Z",
+        "url": "https://reddit.com/r/collapse/comments/vdvkzh/is_collapse_really_here/icn0xrg/",
+        "text": "global warming, renamed climate change to avoid pesky facts, is a tax scheme.  that’s why any type of debate is stifled.    \n\n\nCarbon dioxide is a good surrogate for any type of production.  Taxing carbon dioxide output is an indirect tax on all production.",
+        "sentiment": "NEGATIVE",
+        "_version_": 1862102545390895105
+      },
+      {
+        "id": "icotclx",
+        "subreddit": "publicfreakout",
+        "timestamp": "2022-06-17T09:08:41Z",
+        "url": "https://reddit.com/r/PublicFreakout/comments/ve5o4m/italian_car_owners_dealing_with_global_warming/icotclx/",
+        "text": "&gt; It’s scary to think about how much this new heat level will increase in the coming years.\n\nSo, the warming due carbon dioxide in the atmosphere takes about ~10 years to take full effect. Essentially, what I'm saying is that the heat we're experiencing, now, is like the full heating effect from the carbon level ppm amount from around 2012 (which was 390ppm). \n\nWere closing on 420ppm, now.\n\n[https://www.climate.gov/news-features/understanding-climate/climate-change-atmospheric-carbon-dioxide](https://www.climate.gov/news-features/understanding-climate/climate-change-atmospheric-carbon-dioxide)",
+        "sentiment": "POSITIVE",
+        "_version_": 1862102545108828160
+      },
+      {
+        "id": "ltugwbj",
+        "subreddit": "climatechange",
+        "timestamp": "2024-10-26T13:16:56Z",
+        "url": "https://www.reddit.com/r/climatechange/comments/1132ddo/how_do_people_not_believe_climate_change_is_real/",
+        "text": "It�s natural not caused by carbon dioxide�",
+        "sentiment": "POSITIVE",
+        "_version_": 1862102558502289412
+      },
+      {
+        "id": "ibetac7",
+        "subreddit": "investing",
+        "timestamp": "2022-06-06T20:56:24Z",
+        "url": "https://reddit.com/r/investing/comments/v32khj/if_their_is_going_to_be_anything_to_invest_on_it/ibetac7/",
+        "text": "&gt;\tIn addition to mitigating animal slaughter, cultivated meat could also help slow climate change driven by greenhouse gas emissions such as carbon dioxide and methane. The food system is responsible for about a quarter of global greenhouse gas emissions, most of which are from animal agriculture. The transport needed for agriculture emits both methane and carbon dioxide, and clearing land and forests -- including for agriculture -- emits carbon dioxide, according to the United Nations.\n\nThis is the only sustainable future there is for meat and I don’t see any downsides.",
+        "sentiment": "POSITIVE",
+        "_version_": 1862102549503410177
+      },
+      {
+        "id": "iaerbfk",
+        "subreddit": "worldnews",
+        "timestamp": "2022-05-29T09:31:01Z",
+        "url": "https://reddit.com/r/worldnews/comments/v06pfl/armed_female_bystander_kills_man_firing_at_party/iaerbfk/",
+        "text": "Researchers from Tokyo Metropolitan University have developed a new carbon capture system which removes carbon dioxide directly from the atmosphere with unprecedented performance. Isophorone diamine (IPDA) in a “liquid-solid phase separation” system was found to remove carbon dioxide at the low concentrations contained in the atmosphere with 99% efficiency. The compound is reusable with minimal heating and at least twice as fast as existing systems, an exciting new development for direct air capture.\n\nThe devastating effects of climate change are being felt around the world, with an urgent need for new policies, lifestyles and technologies that will lead to reduced carbon emissions. However, many scientists are looking further ahead than a net-zero emission goal, to a future “beyond zero” where we can actively reduce the amount of carbon dioxide in the atmosphere. The field of carbon capture, the removal and subsequent storage or conversion of carbon dioxide, is developing rapidly, but hurdles remain before it can be deployed at scale.\n\nThe biggest challenges come from efficiency, particularly in processing atmospheric air directly in so-called direct air capture (DAC) systems. The concentrations of carbon dioxide are such that chemical reactions with sorbents are very slow. There is also the difficulty of getting the carbon dioxide out again in more sustainable capture-and-desorption cycles, which can be very energy intensive in itself. Even leading efforts to build DAC plants, such as those using potassium hydroxide and calcium hydroxide, suffer serious efficiency issues and recovery costs, making the hunt for new processes notably urgent.\n\nhttps://pubs.acs.org/doi/10.1021/acsenvironau.1c00065",
+        "sentiment": "NEGATIVE",
+        "_version_": 1862102552227610631
+      }
+    ]
+  },
+  "spellcheck": {
+    "suggestions": [],
+    "correctlySpelled": true,
+    "collations": []
+  }
+}

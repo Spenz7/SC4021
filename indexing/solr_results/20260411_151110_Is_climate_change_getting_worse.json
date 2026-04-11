@@ -1,0 +1,120 @@
+{
+  "responseHeader": {
+    "zkConnected": true,
+    "status": 0,
+    "QTime": 28,
+    "params": {
+      "q": "Is climate change getting worse",
+      "defType": "edismax",
+      "spellcheck.q": "Is climate change getting worse",
+      "qf": "text^3 subreddit^1",
+      "spellcheck": "true",
+      "start": "0",
+      "rows": "10",
+      "wt": "json",
+      "spellcheck.collate": "true"
+    }
+  },
+  "response": {
+    "numFound": 101355,
+    "start": 0,
+    "numFoundExact": true,
+    "docs": [
+      {
+        "id": "icv0g2l",
+        "subreddit": "movies",
+        "timestamp": "2022-06-18T18:56:18Z",
+        "url": "https://reddit.com/r/movies/comments/vf8rdp/jurassic_park_didnt_need_even_one_sequel_five_is/icv0g2l/",
+        "text": "The worse climate change gets the worse these storms will get.",
+        "sentiment": "NEGATIVE",
+        "_version_": 1862102544337076226
+      },
+      {
+        "id": "i94llep",
+        "subreddit": "facepalm",
+        "timestamp": "2022-05-18T21:53:39Z",
+        "url": "https://reddit.com/r/facepalm/comments/usieds/simpsons_did_it/i94llep/",
+        "text": "I fear as the economy crumbles further and climate change gets worse, the desperate will turn to bigotry and make things get worse.",
+        "sentiment": "NEGATIVE",
+        "_version_": 1862102555652259843
+      },
+      {
+        "id": "i8ilj40",
+        "subreddit": "conservative",
+        "timestamp": "2022-05-13T23:46:21Z",
+        "url": "https://reddit.com/r/Conservative/comments/uov1c8/how_generous_house_is_giving_staff_and_capitol/i8ilj40/",
+        "text": "The only reward we'll get is watching the world get worse and worse until climate change flat out ends our shit. No thank you.",
+        "sentiment": "POSITIVE",
+        "_version_": 1862102557065740290
+      },
+      {
+        "id": "i9o4tcd",
+        "subreddit": "askreddit",
+        "timestamp": "2022-05-23T11:06:45Z",
+        "url": "https://reddit.com/r/AskReddit/comments/uvv7gb/what_is_everywhere_should_be_nowhere_and_is_not/i9o4tcd/",
+        "text": "The thing about climate change is that there's no point where you can say, \"Oh well, we failed but this is as bad as it's going to get.\" It can keep getting worse, and it can get much, much worse.",
+        "sentiment": "NEGATIVE",
+        "_version_": 1862102554032209920
+      },
+      {
+        "id": "iacgv4a",
+        "subreddit": "brexit",
+        "timestamp": "2022-05-28T19:33:49Z",
+        "url": "https://reddit.com/r/brexit/comments/uzs6li/boris_johnson_to_reportedly_bring_back_imperial/iacgv4a/",
+        "text": "I want kids but this generation gets worse and worse (and climate change)",
+        "sentiment": "NEGATIVE",
+        "_version_": 1862102552355536899
+      },
+      {
+        "id": "ibgvxw7",
+        "subreddit": "worldnews",
+        "timestamp": "2022-06-07T09:21:18Z",
+        "url": "https://reddit.com/r/worldnews/comments/v6j6tz/a_study_has_found_that_there_is_now_a_42_chance/ibgvxw7/",
+        "text": "I think the last 3 years have been getting steadily worse especially, and other things like climate change have been going on for years and years and getting worse.",
+        "sentiment": "POSITIVE",
+        "_version_": 1862102549345075200
+      },
+      {
+        "id": "iaw1n4q",
+        "subreddit": "cscareerquestions",
+        "timestamp": "2022-06-02T08:27:14Z",
+        "url": "https://reddit.com/r/cscareerquestions/comments/v2lpdw/elon_musk_just_asked_all_employees_to_return_to/iaw1n4q/",
+        "text": "Weather events are getting worse and less predictable. But that is due to climate change. Saying it's getting worse for religious reasons is just escaping having to act.",
+        "sentiment": "NEGATIVE",
+        "_version_": 1862102550850830340
+      },
+      {
+        "id": "ia4sm5a",
+        "subreddit": "agedlikemilk",
+        "timestamp": "2022-05-27T00:12:08Z",
+        "url": "https://reddit.com/r/agedlikemilk/comments/uy3yhg/10_years_later/ia4sm5a/",
+        "text": "It won't fix itself if we do anything about climate change; it will keep getting worse and worse.",
+        "sentiment": "POSITIVE",
+        "_version_": 1862102552821104641
+      },
+      {
+        "id": "n547nod",
+        "subreddit": "climatechange",
+        "timestamp": "2025-07-25T16:56:22Z",
+        "url": "https://www.reddit.com/r/climatechange/comments/1m8j0wc/does_anyone_else_feel_no_one_cares_about_climate/",
+        "text": "Its getting worse and worse with all the MAGA deniers.",
+        "sentiment": "NEGATIVE",
+        "_version_": 1862102558044061702
+      },
+      {
+        "id": "idaxfbt",
+        "subreddit": "unitedkingdom",
+        "timestamp": "2022-06-22T13:39:21Z",
+        "url": "https://reddit.com/r/unitedkingdom/comments/vi2391/exclusive_jeremy_corbyn_on_the_establishment/idaxfbt/",
+        "text": "We really have to do something about climate change.  It is getting worse and worse every single day.",
+        "sentiment": "POSITIVE",
+        "_version_": 1862102542436007937
+      }
+    ]
+  },
+  "spellcheck": {
+    "suggestions": [],
+    "correctlySpelled": true,
+    "collations": []
+  }
+}
