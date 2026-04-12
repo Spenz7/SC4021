@@ -2,6 +2,10 @@
 
 Group 39
 
+Note: For Task 3.1 Crawling, since it's a fairly indepnedent task, I've included a separate README for it inside the folder titled "3.1"
+
+Below is the README for the tasks after 3.1
+
 ## Quick Start: End-to-End Flow
 
 1. **Prerequisites**  
