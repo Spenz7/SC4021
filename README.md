@@ -2,7 +2,7 @@
 
 Group 39
 
-Note: For Task 3.1 Crawling, since it's a fairly independent task, I've included a separate README for it inside the folder titled "3.1"
+Note: For Task 3.1 Crawling, since it's a fairly independent README wise, I've included a separate README for it inside the folder titled "3.1"
 
 Below is the README for the tasks after 3.1
 
