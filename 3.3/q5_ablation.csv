@@ -1,7 +1,0 @@
-model,accuracy,macro_f1,weighted_f1,fit_time_sec,predict_time_sec,records_per_sec
-legacy_raw_labels,0.337,0.3206,0.3829,,,
-polarity_band_tuned,0.391,0.3269,0.3553,,,
-hybrid_gate_tuned,0.403,0.3462,0.4002,,,
-text_unigram_logreg,0.634,0.4674,0.6213,2.5115,0.0742,13479.55
-text_unigram_plus_numeric,0.632,0.526,0.6349,0.665,0.0873,11460.8
-text_bigram_plus_numeric,0.643,0.5244,0.6422,1.6598,0.1495,6689.87
